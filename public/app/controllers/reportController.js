@@ -1,7 +1,17 @@
 app.controller('reportController', function($http, $mdDialog){
     let self = this;
     self.originalImages = [];
-    self.name = 'hola';
+    
+    //width and heigth of the images
+    self.w_list = [];
+    self.h_list = [];
+    for (var i = 0; i <= 50; i++) {
+      self.w_list.push(i);
+    }
+
+    for (var x = 0; x < 36; x++) {
+      self.h_list.push(x);
+    }
 
     $http.get('/data').then(res => {
         self.originalImages =  res.data;
@@ -50,11 +60,11 @@ app.controller('reportController', function($http, $mdDialog){
       };
 
     
-      self.loadImage = () => {
-          $http.get('/image').then(res => {
-            console.log(res.data);
-        });
-      };
+      // self.loadImage = () => {
+      //     $http.get('/image').then(res => {
+      //       console.log(res.data);
+      //   });
+      // };
       function DialogController($scope, $mdDialog) {
         $scope.hide = function() {
           $mdDialog.hide();

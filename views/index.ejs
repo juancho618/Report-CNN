@@ -12,56 +12,53 @@
                     transition: .3s ease-in-out;
                 }
                 .hover01:hover {
-                    -webkit-transform: scale(1.3);
-                    transform: scale(1.3);
+                    -webkit-transform: scale(2);
+                    transform: scale(2);
                 }
             </style>
     </head>
 <body ng-app="reportApp" ng-controller="reportController as report">
 
-    <h1>First Training Data Used</h1>
+    <h1>First Training Data Used</h1>   
     
-    <div style="min-width:100%">
-    <% for(var i=0; i<50; i++) {%>
-            <div>
-                <% for(var x=0; x<35; x++) {%>
-                    <object width=64 height=64 class="hover01"  ng-click="report.showDialog($event, 'xmap_<%= x %>_<%= i %>.tif')"
-                        data="C:\Users\juanc\Documents\CNN\Art-CNN\original_train\xmap_<%= x %>_<%= i %>.tif" type="image/tiff">
-                        <param name="src" value="tiffdocument.tif">
-                        <param name="negative" value="yes">
-                    </object>
-                        <!-- <img width=64 height=64 src="C:\Users\juanc\Documents\CNN\Art-CNN\original_train\xmap_0_<%= i %>.tif" alt=""> -->
-                <% } %>
-            </div>
-        <% } %>
+    <div layout="row">
+            <md-button class="md-primary md-raised"  type="button" ng-click="report.imgType = 'VIS'; report.activateVIS = true">VIS</md-button>
+            <md-button class="md-primary md-raised" type="button" ng-click="report.imgType ='IRR'; report.activateIRR = true">IRR</md-button>
+            <md-button class="md-primary md-raised" type="button" ng-click="report.imgType ='noPooling'; report.activateNP = true">without pooling x1</md-button>
+            <md-button class="md-primary md-raised" type="button" ng-click="report.imgType ='noPoolingx3'; report.activateNPx3 = true">without pooling x3</md-button>
     </div>
-    <md-content class="md-padding"  layout="row" flex layout-fill>
-          <md-card>
-               
-            <md-card-title>
-              <md-card-title-text>
-                <span class="md-headline">Action buttons</span>
-              </md-card-title-text>
-            </md-card-title>
-            <md-card-content>
-              <p>
-                The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-                two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-              </p>
-              <p>
-                The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-                two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-              </p>
-              <p>
-                The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-                two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-              </p>
-            </md-card-content>
-            <md-card-actions layout="row" layout-align="end center">
-              <md-button>Action 1</md-button>
-              <md-button>Action 2</md-button>
-            </md-card-actions>
-          </md-card>
+    <div layout="column">
+            <div style="min-width:100%" ng-if="report.activateVIS" ng-show="report.imgType == 'VIS'">
+                    <div ng-repeat="x in report.h_list" style="margin-bottom: -4px;" layout="row">
+                        <div ng-repeat="y in report.w_list">    
+                                <img width="28" height="28" class="hover01"  ng-src="/imageVIS?num={{(51*x)+y}}">
+                        </div>
+                    </div>   
+                </div>
+                <div style="min-width:100%" ng-if="report.activateIRR" ng-show="report.imgType == 'IRR'" layout="column">
+                        <div ng-repeat="x in report.h_list" layout="row" style="margin-bottom: -4px;">
+                            <div ng-repeat="y in report.w_list" >    
+                                    <img width="28" height="28" class="hover01" ng-src="/imageIRR?num={{(51*x)+y}}">
+                            </div>
+                        </div>   
+                </div>
+                
+                <div style="min-width:100%" ng-if="report.activateNP" ng-show="report.imgType == 'noPooling'"  layout="column">
+                        <div ng-repeat="x in report.h_list" layout="row" style="margin-bottom: -4px;">
+                            <div ng-repeat="y in report.w_list" >    
+                                    <img width="28" height="28" class="hover01" ng-src="/imageNoPooling?num={{(51*x)+y}}">
+                            </div>
+                        </div>   
+                </div>
+                <div style="min-width:100%" ng-if="report.activateNPx3" ng-show="report.imgType == 'noPoolingx3'"  layout="column">
+                        <div ng-repeat="x in report.h_list" layout="row" style="margin-bottom: -4px;">
+                            <div ng-repeat="y in report.w_list">    
+                                    <img width="28" height="28" class="hover01" ng-src="/imageNoPoolingx3?num={{(51*x)+y}}">
+                            </div>
+                        </div>   
+                </div>
+    </div>
+    
 
     <script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js'></script>
     <script type='text/javascript' src='/scripts/angular-animate/angular-animate.js'></script>
