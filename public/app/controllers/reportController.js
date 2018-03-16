@@ -18,7 +18,8 @@ app.controller('reportController', function($http, $mdDialog){
     });
 
     self.showDialog = function(ev, name) {
-      self.loadImage();
+      console.log(ev);
+      // self.loadImage();
       console.log(name);
         $mdDialog.show({
           controller: DialogController,
@@ -34,16 +35,10 @@ app.controller('reportController', function($http, $mdDialog){
                       '</md-toolbar>'+
                       '<md-dialog-content>'+
                           '<div class="md-dialog-content">'+
-                            '<object width=128 height=128 '+
-                                    'data="C:\\Users\\juanc\\Documents\\CNN\\Art-CNN\\original_train\\'+name+'" type="image/tiff">'+
-                                    '<param name="src" value="tiffdocument.tif">'+
-                                    '<param name="negative" value="yes">'+
-                              '</object>'+
-                             '<object width=128 height=128 '+
-                                  'data="C:\\Users\\juanc\\Documents\\CNN\\Art-CNN\\irr_train\\'+name+'" type="image/tiff">'+
-                                  '<param name="src" value="tiffdocument.tif">'+
-                                  '<param name="negative" value="yes">'+
-                             '</object>'+
+                            '<img  class="hover01"  ng-src="/imageVIS?num='+name+'">'+
+                             '<img class="hover01" ng-src="/imageIRR?num='+name+'">'+
+                             '<img class="hover01" ng-src="/imageNoPooling?num='+name+'">'+
+                             '<img class="hover01" ng-src="/imageNoPoolingx3?num='+name+'">'+
                           '</div>'+
                       '</md-dialog-content>'+
                     '</md-dialog>',

@@ -4,6 +4,8 @@
     <head>
             <link href="/angular-material/angular-material.css" rel="stylesheet"/>
             <linkh ref="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous"/>
+            <link rel="stylesheet"
+            href="/scripts/highlight.js/styles/atom-one-dark.css">            
             <style>
                 .hover01 {
                     -webkit-transform: scale(1);
@@ -31,7 +33,7 @@
             <div style="min-width:100%" ng-if="report.activateVIS" ng-show="report.imgType == 'VIS'">
                     <div ng-repeat="x in report.h_list" style="margin-bottom: -4px;" layout="row">
                         <div ng-repeat="y in report.w_list">    
-                                <img width="28" height="28" class="hover01"  ng-src="/imageVIS?num={{(51*x)+y}}">
+                                <img width="28" height="28" class="hover01"  ng-src="/imageVIS?num={{(51*x)+y}}" ng-click="report.showDialog(this, 20)">
                         </div>
                     </div>   
                 </div>
@@ -60,12 +62,14 @@
     </div>
     
 
-    <script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js'></script>
+    <!-- <script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js'></script> -->
+    <script src="/scripts/angular/angular.js"></script>
     <script type='text/javascript' src='/scripts/angular-animate/angular-animate.js'></script>
     <script type='text/javascript' src='/scripts/angular-aria/angular-aria.js'></script>   
     <script type='text/javascript' src="/angular-material/angular-material.js"></script>
     <script type='text/javascript' src="/public/app/app.js"></script>
     <script type='text/javascript' src="/public/app/controllers/reportController.js"></script>
     <script type='text/javascript' src="/public/app/controllers/reportController.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 </body>
 </html>

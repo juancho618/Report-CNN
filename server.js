@@ -70,6 +70,10 @@ app.get('/data', (req, res) => {
     })
 })
 
+app.get('/code', (req, res) => {
+    res.render('code');
+});
+
 app.listen(port, () =>{
     console.log(`the server is running in the port ${port}`)
 })

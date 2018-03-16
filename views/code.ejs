@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+            <link href="/angular-material/angular-material.css" rel="stylesheet"/>
+            <linkh ref="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous"/>
+            <link rel="stylesheet"
+            href="/scripts/highlight.js/styles/atom-one-dark.css">           
+            <style>
+                .hover01 {
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    -webkit-transition: .3s ease-in-out;
+                    transition: .3s ease-in-out;
+                }
+                .hover01:hover {
+                    -webkit-transform: scale(2);
+                    transform: scale(2);
+                }
+            </style>
+    </head>
+<body>
+    <pre>
+        <code class="python">
+            
+        def evaluate():
+        model = Model()
+        img_tf = tf.placeholder(tf.float32)
+        with tf.Graph().as_default():
+            images, labels = data.load_test_data()
+            x = tf.placeholder(shape=[None, data.IMAGE_SIZE, data.IMAGE_SIZE, 3], dtype=tf.float32, name='x') 
+            y = tf.placeholder(shape=[None, data.IMAGE_SIZE,  data.IMAGE_SIZE,3], dtype=tf.float32, name='y') 
+
+        </code>
+    </pre>
+    <script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js'></script>
+    <script type='text/javascript' src='/scripts/angular-animate/angular-animate.js'></script>
+    <script type='text/javascript' src='/scripts/angular-aria/angular-aria.js'></script>   
+    <script type='text/javascript' src="/angular-material/angular-material.js"></script>
+    <script type='text/javascript' src="/public/app/app.js"></script>
+    <!-- <script type='text/javascript' src="/scripts/highlight.js/lib/highlight.js"></script> -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
