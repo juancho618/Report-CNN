@@ -3,7 +3,7 @@ app.controller('modelsController', function($http,  $mdDialog, $scope){
     let self = this;
 
 
-    self.addCode = (path) => {
+    self.addCode = async (path) => {
         let code = angular.element( document.querySelector( '#toBeAppened' ) );
         return $http({
             method: 'POST',
@@ -20,26 +20,29 @@ app.controller('modelsController', function($http,  $mdDialog, $scope){
         };
     }
     self.showCode = (ev) => {
-       $mdDialog.show({
-          controller: DialogController,
-          template:'<md-dialog style="height:500px; width:500px;"  aria-label="Mango (Fruit)">'+
-                        '<md-toolbar>'+
-                        '<div class="md-toolbar-tools">'+
-                          '<h2>resultus for '+ 'Code' +'</h2>'+
-                          '<span flex></span>'+
-                          '<md-button class="md-icon-button" ng-click="cancel()">'+
-                            '<md-icon  aria-label="Close dialog"></md-icon>'+
-                         '</md-button>'+
-                        '</div>'+
-                      '</md-toolbar>'+
-                      '<md-dialog-content layout-align="center center" flex layout="column">'+
-                      '<div hljs hljs-source="myCode"></div>'+
-                      '</md-dialog-content>'+
-                    '</md-dialog>',
-          // templateUrl: 'dialog',
-          parent: angular.element(document.body),
-          targetEvent: ev,
-          clickOutsideToClose:true
-        })
+       self.addCode('../Art-CNN/split.py').then(()=>{
+        $mdDialog.show({
+            controller: DialogController,
+            template:'<md-dialog style="height:500px;"  aria-label="Mango (Fruit)">'+
+                          '<md-toolbar>'+
+                          '<div class="md-toolbar-tools">'+
+                            '<h2>resultus for '+ 'Code' +'</h2>'+
+                            '<span flex></span>'+
+                            '<md-button class="md-icon-button" ng-click="cancel()">'+
+                              '<md-icon  aria-label="Close dialog"></md-icon>'+
+                           '</md-button>'+
+                          '</div>'+
+                        '</md-toolbar>'+
+                        '<md-dialog-content layout-align="center center" flex layout="column">'+
+                        '<div hljs hljs-source="myCode"></div>'+
+                        '</md-dialog-content>'+
+                      '</md-dialog>',
+            // templateUrl: 'dialog',
+            parent: angular.element(document.body),
+            targetEvent: ev,
+            fullscreen: true,
+            clickOutsideToClose:true
+          })
+       })
     }
 });
