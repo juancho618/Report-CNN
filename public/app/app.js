@@ -1,1 +1,1 @@
-let app = angular.module('reportApp', ['ngMaterial']);
+let app = angular.module('reportApp', ['ngMaterial', 'hljs']);

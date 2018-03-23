@@ -18,12 +18,10 @@ app.controller('reportController', function($http, $mdDialog){
     });
 
     self.showDialog = function(ev, name) {
-      console.log(ev);
-      // self.loadImage();
-      console.log(name);
+     
         $mdDialog.show({
           controller: DialogController,
-          template:'<md-dialog aria-label="Mango (Fruit)">'+
+          template:'<md-dialog style="height:500px; width:500px;"  aria-label="Mango (Fruit)">'+
                         '<md-toolbar>'+
                         '<div class="md-toolbar-tools">'+
                           '<h2>resultus for '+ name +'</h2>'+
@@ -33,12 +31,24 @@ app.controller('reportController', function($http, $mdDialog){
                          '</md-button>'+
                         '</div>'+
                       '</md-toolbar>'+
-                      '<md-dialog-content>'+
-                          '<div class="md-dialog-content">'+
-                            '<img  class="hover01"  ng-src="/imageVIS?num='+name+'">'+
-                             '<img class="hover01" ng-src="/imageIRR?num='+name+'">'+
-                             '<img class="hover01" ng-src="/imageNoPooling?num='+name+'">'+
-                             '<img class="hover01" ng-src="/imageNoPoolingx3?num='+name+'">'+
+                      '<md-dialog-content layout-align="center center" flex layout="column">'+
+                          '<div class="md-dialog-content" layout-align="center center" layout="row">'+
+                            '<div layout="column" style="margin-right:10px" layout-align="center center" layout="column">'  +
+                              '<img  class="hover01"  ng-src="/imageVIS?num='+name+'">'+
+                              '<label>VIS</label>'+
+                            '</div>'+                           
+                            '<div layout="column" style="margin-right:10px" layout-align="center center" layout="column">'  + 
+                                '<img class="hover01" ng-src="/imageIRR?num='+name+'">'+
+                                '<label>IRR</label>'+
+                            '</div>'+
+                            '<div layout="column" style="margin-right:10px" layout-align="center center" layout="column">'  +
+                              '<img class="hover01" ng-src="/imageNoPooling?num='+name+'">'+
+                              '<label>Infered 1ch</label>'+
+                            '</div>'+
+                            '<div layout="column" style="margin-right:10px" layout-align="center center" layout="column">'  +
+                              '<img class="hover01" ng-src="/imageNoPoolingx3?num='+name+'">'+
+                              '<label>Infered 3ch</label>'+
+                            '</div>'+
                           '</div>'+
                       '</md-dialog-content>'+
                     '</md-dialog>',
@@ -47,11 +57,6 @@ app.controller('reportController', function($http, $mdDialog){
           targetEvent: ev,
           clickOutsideToClose:true
         })
-        .then(function(answer) {
-          self.status = 'You said the information was "' + answer + '".';
-        }, function() {
-          self.status = 'You cancelled the dialog.';
-        });
       };
 
     

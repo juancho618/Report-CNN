@@ -1,0 +1,66 @@
+
+<html>
+    <head>
+        <% include ./partials/head %>   
+    </head>
+    <body ng-app="reportApp" layout="column" ng-controller="modelsController as models">
+        <h1>Models Used</h1>
+        <div layout="row">
+            <md-card>
+                    <md-card-title>
+                        <md-card-title-text>
+                                <md-button class="md-primary md-raised" type="button" ng-click="models.addCode('../Art-CNN/split.py')">
+                                    Codify
+                                </md-button>
+                        <span class="md-headline">Fully Covolutional VGG-16 1 Deconvolution</span>
+                        <span class="md-subhead">Extra Large</span>
+                        </md-card-title-text>
+                    </md-card-title>
+                    <md-card-content layout="row" layout-align="space-between">
+                        <div class="md-media-xl card-media">
+                            <img height="200px" src="/public/img/1xdev.png"/>
+                        </div>
+                
+                        <md-card-actions layout="column">
+                    <md-button class="md-primary md-raised" type="button" aria-label="Code" ng-click="models.showCode($event)">
+                            <md-icon md-font-icon="fa-code" class="fa"></md-icon> View Code
+                        </md-button>
+                        <md-button class="md-icon-button" aria-label="Settings">
+                            <md-icon md-svg-icon=""></md-icon>
+                        </md-button>
+                        <md-button class="md-icon-button" aria-label="Share">
+                            <md-icon md-svg-icon=""></md-icon>
+                        </md-button>
+                        </md-card-actions>
+                    </md-card-content>
+            </md-card>
+            <md-card>
+                    <md-card-title>
+                        <md-card-title-text>
+                        <span class="md-headline">Card with image</span>
+                        <span class="md-subhead">Extra Large</span>
+                        </md-card-title-text>
+                    </md-card-title>
+                    <md-card-content layout="row" layout-align="space-between">
+                        <div class="md-media-xl card-media"> as </div>
+                
+                        <md-card-actions layout="column">
+                        <md-button class="md-icon-button" aria-label="Favorite">
+                            <md-icon md-svg-icon=""></md-icon>
+                        </md-button>
+                        <md-button class="md-icon-button" aria-label="Settings">
+                            <md-icon md-svg-icon=""></md-icon>
+                        </md-button>
+                        <md-button class="md-icon-button" aria-label="Share">
+                            <md-icon md-svg-icon=""></md-icon>
+                        </md-button>
+                        </md-card-actions>
+                    </md-card-content>
+            </md-card>
+        </div>
+           
+                
+        <% include ./partials/scripts %>  
+        <script type='text/javascript' src="/public/app/controllers/modelsController.js"></script> 
+    </body>
+</html>

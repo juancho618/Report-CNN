@@ -19,7 +19,10 @@
                 }
             </style>
     </head>
-<body>
+<body ng-app="reportApp" ng-controller="codeController as code">
+    <md-button class="md-primary md-raised" type="button" ng-click="code.addCode('../Art-CNN/split.py')">
+        Codify
+    </md-button>
     <pre>
         <code class="python">
             
@@ -33,13 +36,14 @@
 
         </code>
     </pre>
-    <script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js'></script>
-    <script type='text/javascript' src='/scripts/angular-animate/angular-animate.js'></script>
-    <script type='text/javascript' src='/scripts/angular-aria/angular-aria.js'></script>   
-    <script type='text/javascript' src="/angular-material/angular-material.js"></script>
-    <script type='text/javascript' src="/public/app/app.js"></script>
+    <div hljs hljs-source="code.myCode"></div>
+    
+        <% include ./partials/scripts %>
+   
+        <script type='text/javascript' src="/public/app/controllers/codeController.js"></script>
     <!-- <script type='text/javascript' src="/scripts/highlight.js/lib/highlight.js"></script> -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+        
+        <script>hljs.initHighlightingOnLoad();</script>
+ 
 </body>
 </html>
