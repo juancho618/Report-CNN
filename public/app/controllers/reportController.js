@@ -2,6 +2,8 @@ app.controller('reportController', function($http, $mdDialog){
     let self = this;
     self.originalImages = [];
     
+
+    
     //width and heigth of the images
     self.w_list = [];
     self.h_list = [];

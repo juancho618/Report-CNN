@@ -4,50 +4,31 @@
         <% include ./partials/head %>   
     </head>
     <body ng-app="reportApp" layout="column" ng-controller="modelsController as models">
-        <h1>Models Used</h1>
-        <div layout="row">
-            <md-card>
+        <% include ./partials/nav %>
+        <h1 class="md-display-1" style="margin:8px"> Models Used </h1>
+        <div layout="row" layout-wrap>
+            <md-card flex="45" ng-repeat="model in models.modelsList">
                     <md-card-title>
                         <md-card-title-text>
-                        <span class="md-headline">Fully Covolutional VGG-16 1 Deconvolution</span>
-                        <span class="md-subhead">Extra Large</span>
+                        <span class="md-headline">{{model.title}}</span>
+                        <span class="md-subhead">Model Image</span>
                         </md-card-title-text>
                     </md-card-title>
                     <md-card-content layout="row" layout-align="space-between">
                         <div class="md-media-xl card-media">
-                            <img height="200px" src="/public/img/1xdev.png"/>
+                            <img height="200px" src="/public/img/{{model.imageName}}" ng-click="models.openImage(model.imageName)"/>
                         </div>
                 
                         <md-card-actions layout="column">
-                    <md-button class="md-primary md-raised" type="button" aria-label="Code" ng-click="models.showCode($event)">
+                        <md-button class="md-primary md-raised" type="button" aria-label="Code" ng-click="models.showCode($event, model.codeFile)">
                             <md-icon md-font-icon="fa-code" class="fa"></md-icon> View Code
                         </md-button>
-                        <md-button class="md-icon-button" aria-label="Settings">
-                            <md-icon md-svg-icon=""></md-icon>
+                        <md-button class="md-primary md-raised" type="button" aria-label="Samples" ng-click="models.showSamples($event, model.samplePath)">
+                                <md-icon md-font-icon="fa-file-image-o" class="fa"></md-icon> Some Results
                         </md-button>
-                        <md-button class="md-icon-button" aria-label="Share">
-                            <md-icon md-svg-icon=""></md-icon>
-                        </md-button>
-                        </md-card-actions>
-                    </md-card-content>
-            </md-card>
-            <md-card>
-                    <md-card-title>
-                        <md-card-title-text>
-                        <span class="md-headline">Card with image</span>
-                        <span class="md-subhead">Extra Large</span>
-                        </md-card-title-text>
-                    </md-card-title>
-                    <md-card-content layout="row" layout-align="space-between">
-                        <div class="md-media-xl card-media"> as </div>
-                
-                        <md-card-actions layout="column">
-                        <md-button class="md-icon-button" aria-label="Favorite">
-                            <md-icon md-svg-icon=""></md-icon>
-                        </md-button>
-                        <md-button class="md-icon-button" aria-label="Settings">
-                            <md-icon md-svg-icon=""></md-icon>
-                        </md-button>
+                        <md-button class="md-primary md-raised" type="button" aria-label="Samples" ng-click="models.openTensorboard(model.port)">
+                            <md-icon md-font-icon="fa-bar-chart" class="fa"></md-icon> Tensorboard
+                    </md-button>
                         <md-button class="md-icon-button" aria-label="Share">
                             <md-icon md-svg-icon=""></md-icon>
                         </md-button>

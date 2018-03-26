@@ -9,7 +9,19 @@ let PythonShell = require('python-shell');
 const app = express();
 const port = 5050;
 
-app.set('view engine', 'ejs');
+
+// require('child_process').exec(__dirname + '/tensorboard/runScript.bat', function (err, stdout, stderr) {
+//     if (err) {
+//         // Ooops.
+//         // console.log(stderr);
+//         return console.log(err);
+//     }
+
+//     // Done.
+//     console.log(stdout);
+// });
+
+// app.set('view engine', 'ejs');
 
 // Body parser
 app.use(bodyParser.json());
@@ -63,6 +75,22 @@ app.get('/imageNoPooling', (req,res) => {
 app.get('/imageNoPoolingx3', (req,res) => {
     const id = req.query.num;
     fs.readFile(`../Art-CNN/data/images/noPoolingx3/noPoolingx3_${id}.png`, function(err, data) {
+        if (err) throw err; // Fail if the file can't be read.     
+        res.writeHead(200, {'Content-Type': 'image/png'});
+        res.end(data, 'binary');
+    });
+})
+app.get('/hourglass', (req,res) => {
+    const id = req.query.num;
+    fs.readFile(`../Art-CNN/data/images/hourglassDev18b/hourglassDev18b_${id}.png`, function(err, data) {
+        if (err) throw err; // Fail if the file can't be read.     
+        res.writeHead(200, {'Content-Type': 'image/png'});
+        res.end(data, 'binary');
+    });
+})
+app.get('/1xDev18b', (req,res) => {
+    const id = req.query.num;
+    fs.readFile(`../Art-CNN/data/images/1xDev18b/1xDev18b_${id}.png`, function(err, data) {
         if (err) throw err; // Fail if the file can't be read.     
         res.writeHead(200, {'Content-Type': 'image/png'});
         res.end(data, 'binary');

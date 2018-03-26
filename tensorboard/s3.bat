@@ -1,0 +1,1 @@
+tensorboard --logdir="E:\CNN\Art-CNN\noPooling\graphs" --port 6003

@@ -1,0 +1,1 @@
+tensorboard --logdir="E:\CNN\Art-CNN\1xDev\graphs" --port 6001

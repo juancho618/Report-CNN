@@ -1,0 +1,1 @@
+tensorboard --logdir="E:\CNN\Art-CNN\hourgladdFCN\graphs" --port 6002
