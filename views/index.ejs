@@ -25,6 +25,8 @@
             <md-button class="md-primary md-raised" type="button" ng-click="report.imgType ='IRR'; report.activateIRR = true">IRR</md-button>
             <md-button class="md-primary md-raised" type="button" ng-click="report.imgType ='noPooling'; report.activateNP = true">without pooling x1</md-button>
             <md-button class="md-primary md-raised" type="button" ng-click="report.imgType ='noPoolingx3'; report.activateNPx3 = true">without pooling x3</md-button>
+            <md-button class="md-primary md-raised" type="button" ng-click="report.imgType ='difference'; report.difference = true">Difference Numpy</md-button>
+            <md-button class="md-primary md-raised" type="button" ng-click="report.imgType ='differencePIL'; report.differencePIL = true">Difference PIL</md-button>
     </div>
     <div layout="column">
             <div style="min-width:100%" ng-if="report.activateVIS" ng-show="report.imgType == 'VIS'">
@@ -56,6 +58,21 @@
                             </div>
                         </div>   
                 </div>
+
+                <div style="min-width:100%" ng-if="report.difference" ng-show="report.imgType == 'difference'"  layout="column">
+                        <div ng-repeat="x in report.h_list" layout="row" style="margin-bottom: -4px;">
+                            <div ng-repeat="y in report.w_list">    
+                                    <img width="28" height="28" class="hover01" ng-src="/difference?num={{(51*x)+y}}" ng-click="report.showDialog($event, 20)">
+                            </div>
+                        </div>   
+                </div>
+                <div style="min-width:100%" ng-if="report.differencePIL" ng-show="report.imgType == 'differencePIL'"  layout="column">
+                    <div ng-repeat="x in report.h_list" layout="row" style="margin-bottom: -4px;">
+                        <div ng-repeat="y in report.w_list">    
+                                <img width="28" height="28" class="hover01" ng-src="/differencePIL?num={{(51*x)+y}}" ng-click="report.showDialog($event, 20)">
+                        </div>
+                    </div>   
+            </div>
     </div>
     
 

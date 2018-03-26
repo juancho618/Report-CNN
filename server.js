@@ -21,7 +21,7 @@ const port = 5050;
 //     console.log(stdout);
 // });
 
-// app.set('view engine', 'ejs');
+app.set('view engine', 'ejs');
 
 // Body parser
 app.use(bodyParser.json());
@@ -44,6 +44,20 @@ app.get('/', (req,res) => {
 app.get('/models', (req,res) => {
     res.render('models');
 })
+
+app.get('/papers', (req,res) => {
+    res.render('papers');
+})
+
+app.get('/pdf', (req,res) => {
+    const name = req.query.name;
+    fs.readFile(`./papers/${name}.pdf`, function(err, data) {
+        if (err) throw err; // Fail if the file can't be read.    
+        res.writeHead(200, {'Content-Type': 'application/pdf'});
+        res.end(data, 'binary');
+    });
+});
+
 app.get('/imageVIS', (req,res) => {
     const id = req.query.num;
     console.log('number', id);
@@ -75,6 +89,22 @@ app.get('/imageNoPooling', (req,res) => {
 app.get('/imageNoPoolingx3', (req,res) => {
     const id = req.query.num;
     fs.readFile(`../Art-CNN/data/images/noPoolingx3/noPoolingx3_${id}.png`, function(err, data) {
+        if (err) throw err; // Fail if the file can't be read.     
+        res.writeHead(200, {'Content-Type': 'image/png'});
+        res.end(data, 'binary');
+    });
+})
+app.get('/difference', (req,res) => {
+    const id = req.query.num;
+    fs.readFile(`../Art-CNN/data/images/diff/diff_${id}.png`, function(err, data) {
+        if (err) throw err; // Fail if the file can't be read.     
+        res.writeHead(200, {'Content-Type': 'image/png'});
+        res.end(data, 'binary');
+    });
+})
+app.get('/differencePIL', (req,res) => {
+    const id = req.query.num;
+    fs.readFile(`../Art-CNN/data/images/diffPIL/diffPIL_${id}.png`, function(err, data) {
         if (err) throw err; // Fail if the file can't be read.     
         res.writeHead(200, {'Content-Type': 'image/png'});
         res.end(data, 'binary');

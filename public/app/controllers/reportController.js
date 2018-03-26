@@ -26,7 +26,7 @@ app.controller('reportController', function($http, $mdDialog){
           template:'<md-dialog style="height:500px; width:500px;"  aria-label="Mango (Fruit)">'+
                         '<md-toolbar>'+
                         '<div class="md-toolbar-tools">'+
-                          '<h2>resultus for '+ name +'</h2>'+
+                          '<h2>Results for '+ name +'</h2>'+
                           '<span flex></span>'+
                           '<md-button class="md-icon-button" ng-click="cancel()">'+
                             '<md-icon  aria-label="Close dialog"></md-icon>'+
