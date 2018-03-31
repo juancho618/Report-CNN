@@ -58,50 +58,67 @@ app.get('/pdf', (req,res) => {
     });
 });
 
-app.get('/imageVIS', (req,res) => {
+app.get('/loadImage', (req, res) => {
     const id = req.query.num;
-    console.log('number', id);
-    fs.readFile(`../Art-CNN/data/images/VIS_crop_registered/VIS_crop_registered_${id}.png`, function(err, data) {
+    const name = req.query.name;
+    fs.readFile(`../Art-CNN/data/images/${name}/${name}_${id}.png`, function(err, data) {
         if (err) throw err; // Fail if the file can't be read.        
+        console.log('num', id);
+        res.writeHead(200, {'Content-Type': 'image/png'});
+        res.end(data, 'binary');
+    });       
+})
+// app.get('/imageVIS', (req,res) => {
+//     const id = req.query.num;
+//     console.log('number', id);
+//     fs.readFile(`../Art-CNN/data/images/VIS_crop_registered/VIS_crop_registered_${id}.png`, function(err, data) {
+//         if (err) throw err; // Fail if the file can't be read.        
         
-        res.writeHead(200, {'Content-Type': 'image/png'});
-        res.end(data, 'binary');
-    });
-})
+//         res.writeHead(200, {'Content-Type': 'image/png'});
+//         res.end(data, 'binary');
+//     });
+// })
 
-app.get('/imageIRR', (req,res) => {
-    const id = req.query.num;
-    fs.readFile(`../Art-CNN/data/images/IRR_crop_registered/IRR_crop_registered_${id}.png`, function(err, data) {
-        if (err) throw err; // Fail if the file can't be read.        
-        res.writeHead(200, {'Content-Type': 'image/png'});
-        res.end(data, 'binary');
-    });
-})
-
-app.get('/imageNoPooling', (req,res) => {
-    const id = req.query.num;
-    fs.readFile(`../Art-CNN/data/images/noPooling/noPooling_${id}.png`, function(err, data) {
-        if (err) throw err; // Fail if the file can't be read.    
-        res.writeHead(200, {'Content-Type': 'image/png'});
-        res.end(data, 'binary');
-    });
-})
-app.get('/imageNoPoolingx3', (req,res) => {
-    const id = req.query.num;
-    fs.readFile(`../Art-CNN/data/images/noPoolingx3/noPoolingx3_${id}.png`, function(err, data) {
-        if (err) throw err; // Fail if the file can't be read.     
-        res.writeHead(200, {'Content-Type': 'image/png'});
-        res.end(data, 'binary');
-    });
-})
-app.get('/difference', (req,res) => {
-    const id = req.query.num;
-    fs.readFile(`../Art-CNN/data/images/diff/diff_${id}.png`, function(err, data) {
-        if (err) throw err; // Fail if the file can't be read.     
-        res.writeHead(200, {'Content-Type': 'image/png'});
-        res.end(data, 'binary');
-    });
-})
+// app.get('/imageIRR', (req,res) => {
+//     const id = req.query.num;
+//     fs.readFile(`../Art-CNN/data/images/IRR_crop_registered/IRR_crop_registered_${id}.png`, function(err, data) {
+//         if (err) throw err; // Fail if the file can't be read.        
+//         res.writeHead(200, {'Content-Type': 'image/png'});
+//         res.end(data, 'binary');
+//     });
+// })
+// app.get('/imageIRRgray', (req,res) => {
+//     const id = req.query.num;
+//     fs.readFile(`../Art-CNN/data/images/IRRgray/IRRgray_${id}.png`, function(err, data) {
+//         if (err) throw err; // Fail if the file can't be read.        
+//         res.writeHead(200, {'Content-Type': 'image/png'});
+//         res.end(data, 'binary');
+//     });
+// })
+// app.get('/imageNoPooling', (req,res) => {
+//     const id = req.query.num;
+//     fs.readFile(`../Art-CNN/data/images/noPooling/noPooling_${id}.png`, function(err, data) {
+//         if (err) throw err; // Fail if the file can't be read.    
+//         res.writeHead(200, {'Content-Type': 'image/png'});
+//         res.end(data, 'binary');
+//     });
+// })
+// app.get('/imageNoPoolingx3', (req,res) => {
+//     const id = req.query.num;
+//     fs.readFile(`../Art-CNN/data/images/noPoolingx3/noPoolingx3_${id}.png`, function(err, data) {
+//         if (err) throw err; // Fail if the file can't be read.     
+//         res.writeHead(200, {'Content-Type': 'image/png'});
+//         res.end(data, 'binary');
+//     });
+// })
+// app.get('/difference', (req,res) => {
+//     const id = req.query.num;
+//     fs.readFile(`../Art-CNN/data/images/diff/diff_${id}.png`, function(err, data) {
+//         if (err) throw err; // Fail if the file can't be read.     
+//         res.writeHead(200, {'Content-Type': 'image/png'});
+//         res.end(data, 'binary');
+//     });
+// })
 app.get('/differencePIL', (req,res) => {
     const id = req.query.num;
     fs.readFile(`../Art-CNN/data/images/diffPIL/diffPIL_${id}.png`, function(err, data) {
@@ -126,6 +143,22 @@ app.get('/1xDev18b', (req,res) => {
         res.end(data, 'binary');
     });
 })
+app.get('/differenceGray', (req,res) => {
+    const id = req.query.num;
+    fs.readFile(`../Art-CNN/data/images/diffGray/diffGray_${id}.png`, function(err, data) {
+        if (err) throw err; // Fail if the file can't be read.     
+        res.writeHead(200, {'Content-Type': 'image/png'});
+        res.end(data, 'binary');
+    });
+})
+// app.get('/differenceGrayNmpy', (req,res) => {
+//     const id = req.query.num;
+//     fs.readFile(`../Art-CNN/data/images/diffGrayNumpy/diffGrayNumpy_${id}.png`, function(err, data) {
+//         if (err) throw err; // Fail if the file can't be read.     
+//         res.writeHead(200, {'Content-Type': 'image/png'});
+//         res.end(data, 'binary');
+//     });
+// })
 app.get('/data', (req, res) => {
     const inputPath = "./data.csv";
     fs.readFile(inputPath, 'utf8', function (err, data) {

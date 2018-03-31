@@ -1,19 +1,69 @@
 app.controller('reportController', function($http, $mdDialog){
     let self = this;
     self.originalImages = [];
-    
-
-    
-    //width and heigth of the images
-    self.w_list = [];
-    self.h_list = [];
-    for (var i = 0; i <= 50; i++) {
-      self.w_list.push(i);
+    self.Math = window.Math;
+    self.images = [
+      { name: 'VIS_crop_registered',
+        width:'3264',
+        height:'2330',
+        buttonText:'Arch VIS'
+      },
+      { name: 'IRR_crop_registered',
+        width:'3264',
+        height:'2330',
+        buttonText:'Arch IR'
+      },
+      { name: 'IRRgray',
+        width:'3264',
+        height:'2330',
+        buttonText:'Arch IR Gray'
+      },
+      { name: 'noPooling', 
+        width:'3264',
+        height:'2330',
+        buttonText:'Result Arch'
+      },
+      { name: 'noPoolingx3', 
+        width:'3264',
+        height:'2330',
+        buttonText:'Result Arch 3ch'
+      },
+      { name: 'diff', 
+        width:'3264',
+        height:'2330',
+        buttonText:'Difference Color Arch'
+      },
+      { name: 'diffGrayNumpy', 
+        width:'3264',
+        height:'2330',
+        buttonText:'Difference Gray Arch'
+      },
+      { name: 'face_vis',
+        width:'7967',
+        height:'7967',
+        buttonText:'Face'
+      },
+      { name: 'robe_vis',
+        width:'6000',
+        height:'6000',
+        buttonText:'Robe'
+      }
+    ]
+    self.getNumber = (n) =>{
+      console.log(n);
+      var step = 1;
+      var input = [];
+      for (var i = 0; i <= n; i += step) {
+          input.push(i);
+      }
+      return input;
     }
 
-    for (var x = 0; x < 36; x++) {
-      self.h_list.push(x);
-    }
+    self.btnAction = (name) => {
+      console.log(name);
+      self.imgType = name;
+      self[name] = true;
+    }    
 
     $http.get('/data').then(res => {
         self.originalImages =  res.data;
