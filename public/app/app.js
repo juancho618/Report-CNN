@@ -1,7 +1,8 @@
-let app = angular.module('reportApp', ['ngMaterial', 'hljs']);
+let app = angular.module('reportApp', ['ngMaterial', 'hljs', 'infinite-scroll']);
+
 app.filter('range', function() {
-    return function(input, total) {
-      total = parseInt(total/64);
+    return function(input, total, size) {
+      total = parseInt(total/size);
       for (var i=0; i<total; i++) {
         input.push(i);
       }  
@@ -11,3 +12,7 @@ app.filter('range', function() {
   app.filter('floor', function() {
     return (input) => Math.floor(input);
   });
+
+
+
+  
