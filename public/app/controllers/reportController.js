@@ -73,6 +73,24 @@ app.controller('reportController', function($http, $mdDialog){
         description: "",
         images:[
           {
+            name: 'robe_face_arch_infered_64',
+            width: '5000',
+            height: '4000',
+            initial_height: '1000',
+            buttonText: 'Arch Result new Data 8bit',
+            tooltip:'',
+            scale:'28'
+          },
+          {
+            name: 'results_robeface_arch_diff_high_64',
+            width: '5000',
+            height: '4000',
+            initial_height: '4000',
+            buttonText: 'Diff PIL',
+            tooltip:'',
+            scale:'22'
+          },
+          {
             name: 'robe_face',
             width: '3264',
             height: '2330',
@@ -153,6 +171,14 @@ app.controller('reportController', function($http, $mdDialog){
             buttonText: 'Arch diff highlight x2 both',
             tooltip:'',
             scale:'28'
+          },{
+            name: 'arch_pil_diff_64',
+            width: '5000',
+            height: '4000',
+            initial_height: '1000',
+            buttonText: 'Arch diff PIL',
+            tooltip:'',
+            scale:'16'
           },
         ]
       },
@@ -199,6 +225,51 @@ app.controller('reportController', function($http, $mdDialog){
           height:'7967',
           initial_height: '3000',
           buttonText:'Face difference inverted',
+          tooltip:'',
+          scale:'16'
+        },
+        {
+          name:'results_robe_face_64',
+          width:'7967',
+          height:'7967',
+          initial_height: '3000',
+          buttonText:'Face 64 new',
+          tooltip:'',
+          scale:'16'
+        },
+        {
+          name:'results_robe_face_diff_64',
+          width:'7967',
+          height:'7967',
+          initial_height: '3000',
+          buttonText:'New Diff',
+          tooltip:'',
+          scale:'16'
+        },
+        {
+          name:'results_robe_face_high_64',
+          width:'7967',
+          height:'7967',
+          initial_height: '3000',
+          buttonText:'Highlight',
+          tooltip:'',
+          scale:'16'
+        },
+        {
+          name:'results_robe_face_diff_pil_64',
+          width:'7967',
+          height:'7967',
+          initial_height: '3000',
+          buttonText:'PIL',
+          tooltip:'',
+          scale:'16'
+        },
+        {
+          name:'results_robe_face_diff_pil_high_64',
+          width:'7967',
+          height:'7967',
+          initial_height: '3000',
+          buttonText:'Highlight PIL',
           tooltip:'',
           scale:'16'
         }
@@ -251,7 +322,25 @@ app.controller('reportController', function($http, $mdDialog){
           buttonText:'Robe Numpy Difference Inverted',
           tooltip:'',
           scale:'16'
-        }
+        },
+        {
+          name: 'results_robeface_robe_diff_pil_64',
+          width:'6000',
+          height:'6000',
+          initial_height: '2500',
+          buttonText:'Diff PIL',
+          tooltip:'',
+          scale:'16'
+        },
+        {
+          name: 'results_robeface_robe_diff_high_64',
+          width:'6000',
+          height:'6000',
+          initial_height: '2500',
+          buttonText:'Highlight',
+          tooltip:'',
+          scale:'16'
+        },
         ]
       },
     ]

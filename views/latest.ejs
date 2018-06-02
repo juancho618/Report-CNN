@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <% include ./partials/head %>      
+            <style>
+                .hover01 {
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    -webkit-transition: .3s ease-in-out;
+                    transition: .3s ease-in-out;
+                }
+                .hover01:hover {
+                    -webkit-transform: scale(2);
+                    transform: scale(2);
+                }
+            </style>
+    </head>
+<body ng-app="reportApp" ng-controller="latestController as latest">
+    <% include ./partials/nav %>
+    <!-- <h1 class="md-display-1" style="margin:8px">First Training Data Used (3264*2330)</h1>    -->
+    <div ng-cloak>
+        <md-content>
+            <md-tabs md-dynamic-height md-border-bottom>
+                <md-tab label="{{tab.label}}" ng-repeat="tab in latest.tabs">
+                    <md-content class="md-padding">
+                        <h1 class="md-display-2">{{tab.title}}</h1>
+                        <p>{{tab.description}}</p>
+
+                        <div layout="row" ng-if='!tab.loadImages' layout-wrap>
+                            <md-card flex="30" ng-repeat="model in latest.histograms">
+                                    <md-card-title>
+                                        <md-card-title-text>
+                                        <span class="md-headline">{{model.name}}</span>
+                                        <span class="md-subhead">Histogram</span>
+                                        </md-card-title-text>
+                                    </md-card-title>
+                                    <md-card-content layout="row" layout-align="space-between">
+                                        <div class="md-media-xl card-media">
+                                            <img width="300px" ng-src="/histograms?name={{model.img}}" ng-click="latest.openImage(model.img)"/>
+                                        </div>
+                                
+                                        <!-- <md-card-actions layout="column">
+                                        <md-button class="md-primary md-raised" type="button" aria-label="Code" ng-click="models.showCode($event, model.codeFile)">
+                                            <md-icon md-font-icon="fa-code" class="fa"></md-icon> View Code
+                                        </md-button>
+                                        <md-button class="md-primary md-raised" type="button" aria-label="Samples" ng-click="models.showSamples($event, model.samplePath)">
+                                                <md-icon md-font-icon="fa-file-image-o" class="fa"></md-icon> Some Results
+                                        </md-button>
+                                        <md-button class="md-primary md-raised" type="button" aria-label="Samples" ng-click="models.openTensorboard(model.port)">
+                                            <md-icon md-font-icon="fa-bar-chart" class="fa"></md-icon> Tensorboard
+                                    </md-button>
+                                        <md-button class="md-icon-button" aria-label="Share">
+                                            <md-icon md-svg-icon=""></md-icon>
+                                        </md-button>
+                                        </md-card-actions> -->
+                                    </md-card-content>
+                            </md-card>
+                        </div>
+                        <div layout="row" ng-if='tab.loadImages'>
+                                <md-button ng-repeat="btn in tab.images" class="md-primary md-raised"  type="button" ng-click="latest.btnAction(btn.name)">
+                                    <md-tooltip md-direction="top ">{{btn.tooltip}}</md-tooltip>
+                                    {{btn.buttonText}}
+                                </md-button>      
+                        </div>
+                        
+                        <div layout="column">
+                                <div ng-repeat="image in tab.images">
+                                        <div style="min-width:100%" ng-if="latest[image.name]" ng-show="latest.imgType == '{{image.name}}'" > 
+                                            <img width="800px" height="800px"   ng-src="/loadImage?name={{image.name}}&type={{tab.type}}" > <!--class="hover01" -->
+                                        </div>
+                                </div>
+                              
+                        </div>
+                    </md-content>                    
+                </md-tab>
+            </md-tabs>
+        </md-content>
+    </div>
+   
+    
+
+    <!-- <script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js'></script> -->
+    <% include ./partials/scripts %>
+   
+    <script type='text/javascript' src="/public/app/controllers/latestController.js"></script>
+    
+</body>
+</html>

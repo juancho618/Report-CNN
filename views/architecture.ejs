@@ -1,0 +1,88 @@
+
+<html>
+    <head>
+        <% include ./partials/head %>   
+    </head>
+    <body ng-app="reportApp" layout="column" ng-controller="inferredController as inferred">
+        <% include ./partials/nav %>
+        <h1 class="md-display-1" style="margin:8px"> Architecture Results </h1>
+        <md-tabs md-dynamic-height md-border-bottom>
+            <md-tab  ng-repeat="tab in inferred.tabs" label="{{tab.label}}">
+                <md-content class="md-padding">
+                    <div layout="row" layout-wrap>
+                        <md-card flex="45" ng-repeat="model in tab.modelsList">
+                            <md-card-title>
+                                <md-card-title-text>
+                                    <span class="md-headline">{{model.title}}</span>
+                                    <span class="md-subhead">Model Image</span>
+                                </md-card-title-text>
+                            </md-card-title>
+                            <md-card-content layout="row" layout-align="space-between">
+                                <div layout="column">
+                                    <div layout="row">
+                                        <div class="md-media-xl card-media">
+                                            <label>Image</label>
+                                            <img height="200px" ng-src="/public/img/{{model.imageName}}" ng-click="inferred.openImage(model.imageName)" />
+                                        </div>
+                                        <div class="md-media-xl card-media">
+                                            <label>Histogram</label>
+                                            <img height="200px" ng-src="/public/img/{{model.histogram}}" ng-click="inferred.openImage(model.histogram)" />
+                                        </div>
+                                    </div>
+                                    <div layout="row">
+                                        <div class="md-media-xl card-media">
+                                            <label>Training Result</label>
+                                            <img height="200px" ng-src="/public/img/{{model.trainingResult}}" ng-click="inferred.openImage(model.trainingResult)" ng-if="model.modelImg !='N/A'"
+                                            />
+                                            <h4 ng-if="model.modelImg =='N/A'">N/A</h4>
+                                        </div>
+                                        <div class="md-media-xl card-media">
+                                            <label>Model</label>
+                                            <img height="200px" ng-src="/public/img/{{model.modelImg}}" ng-click="inferred.openImage(model.modelImg)" ng-if="model.modelImg !='N/A'"
+                                            />
+                                            <h4 ng-if="model.modelImg =='N/A'">N/A</h4>
+                                        </div>
+                                    </div>
+                                    <div layout="row">
+                                        <label>Test Average Loss</label>
+                                        <h3>{{model.testResult}}</h3>
+        
+                                    </div>
+        
+                                </div>
+        
+                                <!-- <div class="md-media-xl card-media">
+                                        <img height="200px" ng-src="/public/img/{{model.imageName}}" ng-click="inferred.openImage(model.imageName)" />
+                                    </div>
+                                    <div class="md-media-xl card-media">
+                                        <img height="200px" ng-src="/public/img/{{model.imageName}}" ng-click="inferred.openImage(model.imageName)" />
+                                    </div>
+                                    <div class="md-media-xl card-media">
+                                        <img height="200px" ng-src="/public/img/{{model.imageName}}" ng-click="inferred.openImage(model.imageName)" />
+                                    </div> -->
+                                <!-- <md-card-actions layout="column">
+                                    <md-button class="md-primary md-raised" type="button" aria-label="Code" ng-click="inferred.showCode($event, model.codeFile)">
+                                        <md-icon md-font-icon="fa-code" class="fa"></md-icon> View Code
+                                    </md-button>
+                                    <md-button class="md-primary md-raised" type="button" aria-label="Samples" ng-click="inferred.showSamples($event, model.samplePath)">
+                                            <md-icon md-font-icon="fa-file-image-o" class="fa"></md-icon> Some Results
+                                    </md-button>
+                                    <md-button class="md-primary md-raised" type="button" aria-label="Samples" ng-click="inferred.openTensorboard(model.port)">
+                                        <md-icon md-font-icon="fa-bar-chart" class="fa"></md-icon> Tensorboard
+                                </md-button>
+                                    <md-button class="md-icon-button" aria-label="Share">
+                                        <md-icon md-svg-icon=""></md-icon>
+                                    </md-button>
+                                    </md-card-actions> -->
+                            </md-card-content>
+                        </md-card>
+                    </div>
+                </md-content>
+            </md-tab>
+        </md-tabs>
+           
+                
+        <% include ./partials/scripts %>  
+        <script type='text/javascript' src="/public/app/controllers/inferredController.js"></script> 
+    </body>
+</html>

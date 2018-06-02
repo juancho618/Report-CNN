@@ -50,6 +50,18 @@ app.get('/denoised', (req,res) => {
 app.get('/papers', (req,res) => {
     res.render('papers');
 })
+app.get('/overview', (req,res) => {
+    res.render('overview');
+})
+app.get('/latest', (req,res) => {
+    res.render('latest');
+})
+app.get('/inferred', (req,res) => {
+    res.render('inferred');
+})
+app.get('/architecture', (req,res) => {
+    res.render('architecture');
+})
 
 app.get('/pdf', (req,res) => {
     const name = req.query.name;
@@ -63,9 +75,38 @@ app.get('/pdf', (req,res) => {
 app.get('/loadImage', (req, res) => {
     const id = req.query.num;
     const name = req.query.name;
-    fs.readFile(`../Art-CNN/data/images/${name}/${name}_${id}.png`, function(err, data) { //add _
-        if (err) throw err; // Fail if the file can't be read.        
-        console.log('num', id);
+    const type = req.query.type;
+    
+    if (type){
+        fs.readFile(`../Art-CNN/data/images/${type}/${name}.png`, function(err, data) { //add _
+            if (err) throw err; // Fail if the file can't be read.        
+            console.log('num', id);
+            res.writeHead(200, {'Content-Type': 'image/png'});
+            res.end(data, 'binary');
+        });    
+    }
+    else{
+        fs.readFile(`../Art-CNN/data/images/${name}/${name}_${id}.png`, function(err, data) { //add _
+            if (err) throw err; // Fail if the file can't be read.        
+            console.log('num', id);
+            res.writeHead(200, {'Content-Type': 'image/png'});
+            res.end(data, 'binary');
+        });    
+    }       
+})
+
+app.get('/publicReport', (req, res) => {
+    const name = req.query.name;
+    fs.readFile(`../Report-CNN/public/img/${name}`, function(err, data) { 
+        if (err) throw err;      
+        res.writeHead(200, {'Content-Type': 'image/png'});
+        res.end(data, 'binary');
+    });       
+})
+app.get('/histograms', (req, res) => {
+    const name = req.query.name;
+    fs.readFile(`../Art-CNN/data/histograms/${name}.png`, function(err, data) { 
+        if (err) throw err;      
         res.writeHead(200, {'Content-Type': 'image/png'});
         res.end(data, 'binary');
     });       
