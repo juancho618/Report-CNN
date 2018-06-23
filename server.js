@@ -26,6 +26,7 @@ app.set('view engine', 'ejs');
 // Body parser
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+
 //angular material
 app.use('/angular-material', express.static(__dirname + '/node_modules/angular-material/'));
 app.use('/scripts', express.static(__dirname + '/node_modules/'));
@@ -35,6 +36,12 @@ app.use('/public', express.static(__dirname + '/public/'));
 // app.use('/images', express.static(__dirname + '/public/img/'));
 app.use('/font-awesome', express.static(__dirname + '/node_modules/font-awesome/'));
 app.set('views', __dirname + '/views/');
+
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+  });
 
 // For views
 app.get('/', (req,res) => {
@@ -59,8 +66,32 @@ app.get('/latest', (req,res) => {
 app.get('/inferred', (req,res) => {
     res.render('inferred');
 })
-app.get('/architecture', (req,res) => {
+app.get('/architectures', (req,res) => {
     res.render('architecture');
+})
+
+app.get('/test', (req,res) => {
+    console.log('someone requested test');
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    res.send({
+        "degrees": [
+            {
+                "Degree": "1st Degree",
+                "School": "University of Florida",
+                "Program": "Agriculture",
+                "Type": "Bachelor of Science",
+                "Year": "2012"
+            },
+            {
+                "Degree": "2nd Degree",
+                "School": "Boston University",
+                "Program": "Computer Information Systems",
+                "Type": "Master of Science",
+                "Year": "2019"
+            }
+        ]
+    });
 })
 
 app.get('/pdf', (req,res) => {
@@ -71,6 +102,8 @@ app.get('/pdf', (req,res) => {
         res.end(data, 'binary');
     });
 });
+
+
 
 app.get('/loadImage', (req, res) => {
     const id = req.query.num;
