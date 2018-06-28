@@ -1,4 +1,4 @@
-let app = angular.module('reportApp', ['ngMaterial', 'hljs', 'infinite-scroll']);
+let app = angular.module('reportApp', ['ngMaterial', 'hljs', 'infinite-scroll', 'ngAnimate']);
 
 app.filter('range', function() {
     return function(input, total, size) {

@@ -33,6 +33,7 @@ app.use('/scripts', express.static(__dirname + '/node_modules/'));
 // app.use('/images', express.static(__dirname + './VIS_crop_registered_0.png'));
 //static elements folder
 app.use('/public', express.static(__dirname + '/public/'));
+app.use('/animate', express.static(__dirname + '/node_modules/animate.css/'));
 // app.use('/images', express.static(__dirname + '/public/img/'));
 app.use('/font-awesome', express.static(__dirname + '/node_modules/font-awesome/'));
 app.set('views', __dirname + '/views/');
@@ -46,6 +47,9 @@ app.use(function(req, res, next) {
 // For views
 app.get('/', (req,res) => {
     res.render('index');
+});
+app.get('/copy', (req,res) => {
+    res.render('index-copy');
 });
 
 app.get('/models', (req,res) => {
@@ -68,6 +72,9 @@ app.get('/inferred', (req,res) => {
 })
 app.get('/architectures', (req,res) => {
     res.render('architecture');
+})
+app.get('/modelsOverview', (req,res) => {
+    res.render('modelsOverview');
 })
 
 app.get('/test', (req,res) => {

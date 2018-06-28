@@ -1,62 +1,136 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <% include ./partials/head %>      
-            <style>
-                .hover01 {
-                    -webkit-transform: scale(1);
-                    transform: scale(1);
-                    -webkit-transition: .3s ease-in-out;
-                    transition: .3s ease-in-out;
-                }
-                .hover01:hover {
-                    -webkit-transform: scale(2);
-                    transform: scale(2);
-                }
-            </style>
-    </head>
-<body ng-app="reportApp" ng-controller="reportController as report">
-    <% include ./partials/nav %>
-    <!-- <h1 class="md-display-1" style="margin:8px">First Training Data Used (3264*2330)</h1>    -->
-    <div ng-cloak>
-        <md-content>
-            <md-tabs md-dynamic-height md-border-bottom>
-                <md-tab label="{{tab.label}}" ng-repeat="tab in report.tabs">
-                    <md-content class="md-padding">
-                        <h1 class="md-display-2">{{tab.title}}</h1>
-                        <p>{{tab.description}}</p>
-                        <div layout="row">
-                                <md-button ng-repeat="btn in tab.images" class="md-primary md-raised"  type="button" ng-click="report.btnAction(btn.name)">
-                                    <md-tooltip md-direction="top   ">{{btn.tooltip}}</md-tooltip>
-                                    {{btn.buttonText}}
-                                </md-button>      
-                        </div>
-                        
-                        <div layout="column">
-                                <div ng-repeat="image in tab.images">
-                                        <div style="min-width:100%" ng-if="report[image.name]" ng-show="report.imgType == '{{image.name}}'" infinite-scroll='report.loadMore(image,image.height)' infinite-scroll-distance='2'> 
-                                            <div ng-repeat="x in  [] | range:(image.initial_height):64" style="margin-bottom: -5px;" layout="row">
-                                                <div ng-repeat="y in  [] | range:(image.width):64">    
-                                                        <img width="{{image.scale}}" height="{{image.scale}}" class="hover01"  ng-src="/loadImage?num={{((image.width/64)| floor)*x + y}}&name={{image.name}}" ng-click="report.showDialog($event, ((image.width/64)| floor)*x + y, image.name)">
-                                                </div>
-                                            </div>   
-                                        </div>
-                                </div>
-                              
-                        </div>
-                    </md-content>                    
-                </md-tab>
-            </md-tabs>
-        </md-content>
-    </div>
-   
-    
 
-    <!-- <script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js'></script> -->
-    <% include ./partials/scripts %>
-   
-    <script type='text/javascript' src="/public/app/controllers/reportController.js"></script>
-    
+<head>
+    <% include ./partials/head %>
+        <style>
+            .hover01 {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transition: .3s ease-in-out;
+                transition: .3s ease-in-out;
+            }
+
+            .hover01:hover {
+                -webkit-transform: scale(1.5);
+                transform: scale(1.5);
+            }
+
+            .wrapper {
+                position: relative;
+            }
+
+            .robeBox {
+                position: absolute;
+                top: 282px;
+                left: 67px;
+                width: 40px;
+                height: 40px;
+                border: 2px solid #ffffff;
+                background-color: transparent;
+            }
+
+            .faceBox {
+                position: absolute;
+                top: 148px;
+                left: 100px;
+                width: 70px;
+                height: 70px;
+                border: 2px solid #ffffff;
+                background-color: transparent;
+            }
+
+            .backgroundBox {
+                position: absolute;
+                top: 94px;
+                left: 61px;
+                width: 45px;
+                height: 45px;
+                border: 2px solid #ffffff;
+                background-color: transparent;
+            }
+
+            .archBox {
+
+                position: absolute;
+                top: 10px;
+                left: 18px;
+                width: 45px;
+                height: 40px;
+                border: 2px solid #ffffff;
+                background-color: transparent;
+            }
+        </style>
+</head>
+
+<body ng-app="reportApp" ng-controller="dataIntroController as data">
+    <% include ./partials/nav %>
+        <!-- <h1 class="md-display-1" style="margin:8px">First Training Data Used (3264*2330)</h1>    -->
+        <div layout="row" ng-cloak>
+            <div class="wrapper">
+                <img height="600px" src="https://s3.eu-west-3.amazonaws.com/cnn-art/smallerPanel.jpg" ng-click="data.openImage('https://s3.eu-west-3.amazonaws.com/cnn-art/smallerPanel.jpg')"
+                    alt="panel-image" />
+                <div ng-show="data.robeBox" class="robeBox"></div>
+                <div ng-show="data.faceBox" class="faceBox"></div>
+                <div ng-show="data.backgroundBox" class="backgroundBox"></div>
+                <div ng-show="data.archBox" class="archBox"></div>
+            </div>
+
+            <div class="container" flex layout="column">
+                <div layout="row" layout-align='center'>
+                    <h1>Data: Ghent Altarpiece</h1>
+                </div>
+                <p>The
+                    <i>
+                        <b>Ghent Altarpiece</b>
+                    </i> (or the
+                    <i>
+                        <b>Adoration of the Mystic Lamb</b>
+                    </i>,
+                    <a href="https://en.wikipedia.org/wiki/Dutch_language" title="Dutch language">Dutch</a>:
+                    <i>
+                        <span lang="nl">
+                            <b>Het Lam Gods</b>
+                        </span>
+                    </i>) is a very large and complex 15th-century
+                    <a href="https://en.wikipedia.org/wiki/Polyptych" title="Polyptych">polyptych</a>
+                    <a href="https://en.wikipedia.org/wiki/Altarpiece" title="Altarpiece">altarpiece</a> in
+                    <a href="https://en.wikipedia.org/wiki/St_Bavo%27s_Cathedral,_Ghent" title="St Bavo's Cathedral, Ghent">St Bavo's Cathedral, Ghent</a>, Belgium. It is attributed to the brothers
+                    <a href="https://en.wikipedia.org/wiki/Hubert_van_Eyck" title="Hubert van Eyck">Hubert</a> and
+                    <a href="https://en.wikipedia.org/wiki/Jan_van_Eyck" title="Jan van Eyck">Jan van Eyck</a>, who were
+                    <a href="https://en.wikipedia.org/wiki/Early_Netherlandish_painting" title="Early Netherlandish painting">Early Flemish</a> painters. It is considered a masterpiece of European art and one of the world's treasures.</p>
+                <p>We received two high resolution images from one of the panels. One of them in infrared and the other in the
+                    visual spectrum.</p>
+                <p>Just the color panel has a size of 8GB and with a 24125px by 61386 resolution. This is indeed a big portion
+                    of data that could be use to train and test a model to transform the images from RGB images to infrared
+                    images.
+                </p>
+                <p>The patches of the panel used for the model are:</p>
+                <div layout="row" flex>
+                    <div flex="25" layout="column" layout-padding ng-repeat="patch in data.trainSet">
+                        <h3>{{patch.name}}</h3>
+                        <img ng-mouseover="data.overIn(patch.name)" ng-mouseleave="data.overOut(patch.name)"  class="hover01" width="100px" ng-src="{{patch.urlVIS}}" ng-click="data.openImage(patch.urlVIS)" />
+                        <img class="hover01" width="100px" ng-src="{{patch.urlIR}}" ng-click="data.openImage(patch.urlIR)" />
+                        <h4>{{patch.width}}px X {{patch.height}}px</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <img height="600px" src="https://s3.eu-west-3.amazonaws.com/cnn-art/panelIR.jpg" alt="panel-image" ng-click="data.openImage('https://s3.eu-west-3.amazonaws.com/cnn-art/panelIR.jpg')"/>
+                <div ng-show="data.robeBox" class="robeBox"></div>
+                <div ng-show="data.faceBox" class="faceBox"></div>
+                <div ng-show="data.backgroundBox" class="backgroundBox"></div>
+                <div ng-show="data.archBox" class="archBox"></div>
+            </div>
+        </div>
+
+
+
+        <!-- <script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js'></script> -->
+        <% include ./partials/scripts %>
+
+            <script type='text/javascript' src="/public/app/controllers/dataIntroController.js"></script>
+
 </body>
+
 </html>

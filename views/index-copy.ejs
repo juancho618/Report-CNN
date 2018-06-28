@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <% include ./partials/head %>      
+            <style>
+                .hover01 {
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    -webkit-transition: .3s ease-in-out;
+                    transition: .3s ease-in-out;
+                }
+                .hover01:hover {
+                    -webkit-transform: scale(2);
+                    transform: scale(2);
+                }
+            </style>
+    </head>
+<body ng-app="reportApp" ng-controller="reportController as report">
+    <% include ./partials/nav %>
+    <!-- <h1 class="md-display-1" style="margin:8px">First Training Data Used (3264*2330)</h1>    -->
+    <div ng-cloak>
+        <md-content>
+            <md-tabs md-dynamic-height md-border-bottom>
+                <md-tab label="{{tab.label}}" ng-repeat="tab in report.tabs">
+                    <md-content class="md-padding">
+                        <h1 class="md-display-2">{{tab.title}}</h1>
+                        <p>{{tab.description}}</p>
+                        <div layout="row">
+                                <md-button ng-repeat="btn in tab.images" class="md-primary md-raised"  type="button" ng-click="report.btnAction(btn.name)">
+                                    <md-tooltip md-direction="top   ">{{btn.tooltip}}</md-tooltip>
+                                    {{btn.buttonText}}
+                                </md-button>      
+                        </div>
+                        
+                        <div layout="column">
+                                <div ng-repeat="image in tab.images">
+                                        <div style="min-width:100%" ng-if="report[image.name]" ng-show="report.imgType == '{{image.name}}'" infinite-scroll='report.loadMore(image,image.height)' infinite-scroll-distance='2'> 
+                                            <div ng-repeat="x in  [] | range:(image.initial_height):64" style="margin-bottom: -5px;" layout="row">
+                                                <div ng-repeat="y in  [] | range:(image.width):64">    
+                                                        <img width="{{image.scale}}" height="{{image.scale}}" class="hover01"  ng-src="/loadImage?num={{((image.width/64)| floor)*x + y}}&name={{image.name}}" ng-click="report.showDialog($event, ((image.width/64)| floor)*x + y, image.name)">
+                                                </div>
+                                            </div>   
+                                        </div>
+                                </div>
+                              
+                        </div>
+                    </md-content>                    
+                </md-tab>
+            </md-tabs>
+        </md-content>
+    </div>
+   
+    
+
+    <!-- <script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js'></script> -->
+    <% include ./partials/scripts %>
+   
+    <script type='text/javascript' src="/public/app/controllers/reportController.js"></script>
+    
+</body>
+</html>
