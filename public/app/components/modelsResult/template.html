@@ -1,0 +1,51 @@
+<md-tabs md-dynamic-height md-border-bottom>
+        <md-tab  ng-repeat="tab in vm.tabs" label="{{tab.label}}">
+            <md-content class="md-padding">
+                <div layout="row" layout-wrap>
+                    <md-card flex="45" ng-repeat="model in tab.modelsList">
+                        <md-card-title>
+                            <md-card-title-text>
+                                <span class="md-headline">{{model.title}}</span>
+                                <span class="md-subhead">Model Image</span>
+                            </md-card-title-text>
+                        </md-card-title>
+                        <md-card-content layout="row" layout-align="space-between">
+                            <div layout="column">
+                                <div layout="row">
+                                    <div class="md-media-xl card-media">
+                                        <label>Image</label>
+                                        <img height="200px" ng-src="{{model.imageName}}" ng-click="vm.openImage(model.imageName)" />
+                                    </div>
+                                    <div class="md-media-xl card-media">
+                                        <label>Histogram</label>
+                                        <img height="200px" ng-src="{{model.histogram}}" ng-click="vm.openImage(model.histogram)" />
+                                    </div>
+                                </div>
+                                <div layout="row">
+                                    <div class="md-media-xl card-media">
+                                        <label>Training Result</label>
+                                        <img height="200px" ng-src="{{model.trainingResult}}" ng-click="vm.openImage(model.trainingResult)" ng-if="model.modelImg !='N/A'"
+                                        />
+                                        <h4 ng-if="model.modelImg =='N/A'">N/A</h4>
+                                    </div>
+                                    <div class="md-media-xl card-media">
+                                        <label>Model</label>
+                                        <img height="200px" ng-src="{{model.modelImg}}" ng-click="vm.openImage(model.modelImg)" ng-if="model.modelImg !='N/A'"
+                                        />
+                                        <h4 ng-if="model.modelImg =='N/A'">N/A</h4>
+                                    </div>
+                                </div>
+                                <div layout="row">
+                                    <label>Test Average Loss</label>
+                                    <img height="200px" ng-src="{{model.testResult}}" ng-click="vm.openImage(model.testResult)" ng-if="model.modelImg !='N/A'"/>
+                                    
+    
+                                </div>
+    
+                            </div>
+                        </md-card-content>
+                    </md-card>
+                </div>
+            </md-content>
+        </md-tab>
+    </md-tabs>

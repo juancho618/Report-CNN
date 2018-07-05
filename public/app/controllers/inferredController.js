@@ -7,7 +7,7 @@ app.controller('inferredController', function(){
             modelsList: [
                 {
                     title: 'Original',
-                    imageName: '00-17-IR-HI-AT-face_png.png',
+                    imageName: 'https://s3.eu-west-3.amazonaws.com/cnn-art/robeIR.jpg',
                     trainingResult: 'N/A',
                     testResult: 'N/A',
                     modelImg: 'N/A',

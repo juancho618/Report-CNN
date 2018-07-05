@@ -34,6 +34,7 @@ app.use('/scripts', express.static(__dirname + '/node_modules/'));
 //static elements folder
 app.use('/public', express.static(__dirname + '/public/'));
 app.use('/animate', express.static(__dirname + '/node_modules/animate.css/'));
+
 // app.use('/images', express.static(__dirname + '/public/img/'));
 app.use('/font-awesome', express.static(__dirname + '/node_modules/font-awesome/'));
 app.set('views', __dirname + '/views/');
@@ -76,30 +77,11 @@ app.get('/architectures', (req,res) => {
 app.get('/modelsOverview', (req,res) => {
     res.render('modelsOverview');
 })
-
-app.get('/test', (req,res) => {
-    console.log('someone requested test');
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "X-Requested-With");
-    res.send({
-        "degrees": [
-            {
-                "Degree": "1st Degree",
-                "School": "University of Florida",
-                "Program": "Agriculture",
-                "Type": "Bachelor of Science",
-                "Year": "2012"
-            },
-            {
-                "Degree": "2nd Degree",
-                "School": "Boston University",
-                "Program": "Computer Information Systems",
-                "Type": "Master of Science",
-                "Year": "2019"
-            }
-        ]
-    });
+app.get('/vggResults', (req,res) => {
+    res.render('vggResults');
 })
+
+
 
 app.get('/pdf', (req,res) => {
     const name = req.query.name;

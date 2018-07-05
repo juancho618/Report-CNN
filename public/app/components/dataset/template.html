@@ -1,0 +1,9 @@
+<div layout="column">
+    <h2> Original images</h2>
+    <div layout="row">
+        <div style="padding: 5px" ng-repeat="patch in vm.trainSet">
+                <h3>{{patch.name}}</h3>
+                <img width="100px" ng-src="{{patch.urlVIS}}" ng-click="vm.openImage(patch.urlVIS)" />
+        </div>
+    </div>
+</div>

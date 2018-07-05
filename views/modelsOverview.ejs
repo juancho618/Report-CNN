@@ -1,57 +1,81 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <% include ./partials/head %>      
-            <style>
-                .hover01 {
-                    -webkit-transform: scale(1);
-                    transform: scale(1);
-                    -webkit-transition: .3s ease-in-out;
-                    transition: .3s ease-in-out;
-                }
-                .hover01:hover {
-                    -webkit-transform: scale(2);
-                    transform: scale(2);
-                }
-            </style>
-    </head>
+
+<head>
+  <% include ./partials/head %>
+    <style>
+      .hover01 {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+      }
+
+      .hover01:hover {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+      }
+
+      .animate-show {
+        line-height: 20px;
+        opacity: 1;
+        padding: 10px;
+        background: white;
+      }
+
+      .animate-show.ng-hide-add.ng-hide-add-active,
+      .animate-show.ng-hide-remove.ng-hide-remove-active {
+        -webkit-transition: all linear 0.5s;
+        transition: all linear 0.5s;
+      }
+
+      .animate-show.ng-hide {
+        line-height: 0;
+        opacity: 0;
+        padding: 0 10px;
+      }
+    </style>
+</head>
+
 <body ng-app="reportApp" ng-controller="modelOverviewController as vm">
-    <% include ./partials/nav %>
+  <% include ./partials/nav %>
     <!-- <h1 class="md-display-1" style="margin:8px">First Training Data Used (3264*2330)</h1>    -->
     <div ng-cloak layout="column">
-       <h1>Models Implemented</h1>
+      <h1>Models Implemented</h1>
 
-       <div role="dialog" aria-label="Eat me!" layout="column" layout-align="center center" ng-repeat="model in vm.modelsList">
+      <div role="dialog" aria-label="Eat me!" layout="column" layout-align="center center" ng-repeat="model in vm.modelsList">
         <md-toolbar>
           <div class="md-toolbar-tools">
             <h2>{{model.name}}</h2>
             <span flex></span>
-            <md-button><md-icon md-font-icon="fa fa-arrow-circle-down" ng-click="vm.showPanel($event, model)"></md-icon></md-button>
-          </div>         
+            <md-button>
+              <md-icon md-font-icon="fa fa-arrow-circle-down" ng-click="vm.showPanel($event, model)"></md-icon>
+            </md-button>
+          </div>
         </md-toolbar>
-      
-        <div id="{{model.id}}" ng-show="model.show" class="demo-dialog-content">
+
+        <div id="{{model.id}}" ng-show="model.show" class="demo-dialog-content animate-show">
           <p>
             {{model.description}}
           </p>
-      
-          <div layout="column" layout-align='center center' >
-            <img  alt="model-image"  ng-src="{{model.img}}"  width="1126px" height='654px'/>
-            <md-button class="md-raised md-primary">Go to results!</md-button>
+
+          <div layout="column" layout-align='center center'>
+            <img alt="model-image" ng-src="{{model.img}}" width="1126px" height='654px' />
+            <md-button ng-href="/{{model.results}}" class="md-raised md-primary">Go to results!</md-button>
           </div>
         </div>
-      
-      </div>   
-     
+
+      </div>
+
     </div>
-   
-    
+
+
 
     <!-- <script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js'></script> -->
     <% include ./partials/scripts %>
-   
-    <script type='text/javascript' src="/public/app/controllers/modelOverviewController.js"></script>
-    
+
+      <script type='text/javascript' src="/public/app/controllers/modelOverviewController.js"></script>
+
 </body>
+
 </html>

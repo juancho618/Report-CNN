@@ -11,7 +11,8 @@ app.controller('modelOverviewController', function($http,  $mdDialog, $scope, $w
             description: `One of the architecture winner in the ImageNet Competition (ILSVRC-2014), developed at Oxford by the Visual Geometry group. Highly accurate and widely used for classification and detection
                          our approach implements a fully connected VGG-16 model with different upsampling layers to recover the original image.`,
             show: false,
-            img: 'https://s3.eu-west-3.amazonaws.com/cnn-art/vgg.jpg'
+            img: 'https://s3.eu-west-3.amazonaws.com/cnn-art/vgg.jpg',
+            results: 'vggResults'
         },
         {
             name:'Architecture without pooling',
@@ -38,12 +39,11 @@ app.controller('modelOverviewController', function($http,  $mdDialog, $scope, $w
             elementIcon.setAttribute("class", "fa fa-times");
             model.show = true;
             const panel = angular.element(document.querySelector(`#${model.id}`));
-            panel.addClass('animated slideInDown');
+            
         } else if (model.show == true){
             elementIcon.setAttribute("class", "fa fa-arrow-circle-down");
             model.show = false;
             const panel = angular.element(document.querySelector(`#${model.id}`));
-            panel.addClass('animated slideOutUp');
         }
     };
 });
