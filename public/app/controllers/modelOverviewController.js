@@ -22,14 +22,16 @@ app.controller('modelOverviewController', function($http,  $mdDialog, $scope, $w
             is no need to incorporate downsampling architecture in the
             network`,
             show: false,
-            img: 'https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling.jpg'
+            img: 'https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling.jpg',
+            results: 'noPooling'
         },
         {
             name:'Few pooling layers',
             id: 'somePoolingPanel',
             description: 'Few Pooling layers with average pooling to avoid important spatial loss with small upsampling layers.',
             show: false,
-            img: 'https://s3.eu-west-3.amazonaws.com/cnn-art/mixed.jpg'
+            img: 'https://s3.eu-west-3.amazonaws.com/cnn-art/mixed.jpg',
+            results: 'somePooling'
         }
     ]
 

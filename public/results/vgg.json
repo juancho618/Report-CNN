@@ -1,0 +1,169 @@
+{
+    "tabs": [
+        {
+            "label": "face",
+            "modelsList": [
+                {
+                    "title": "Original",
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/faceIr.jpg",
+                    "trainingResult": "N/A",
+                    "testResult": "N/A",
+                    "modelImg": "N/A",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/histograms/face_original_histogram.png"
+                    
+                },
+                {
+                    "title": "FCN VGG-16 with 5-x2 upsample layers",
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/FCN(5_upsampling_layers)/fcnVGG5up_woback_face.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/FCN(5_upsampling_layers)/training_chart/vgg5up.png",
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/FCN(5_upsampling_layers)/evaluation_charts/fcnVGG5up_face.png",
+                    "modelImg": "pending",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/FCN(5_upsampling_layers)/histograms/histogram_Face.png"
+                    
+                },
+                {
+                    "title": "FCN VGG-16 with 3 (x4, x2, x2) upsample layers",
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGGup_3(x4%2Cx2%2Cx2)/total_data_0.6_leaky_relu_6conv_(fcnVGG3up)_woback_face.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGGup_3(x4%2Cx2%2Cx2)/trainig_charts/vgg3up.png",                
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGGup_3(x4%2Cx2%2Cx2)/evaluation_charts/fcnVGG3up_face.png",
+                    "modelImg": "pending",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGGup_3(x4%2Cx2%2Cx2)/histograms/histogram_Face.png"
+                    
+                },
+                {
+                    "title": "FCN VGG-16 with 3 (x2, x2, x4) upsample layers",
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGG3up(x2_x2_x4)/(fcnVGG3up_2)_woback_face.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGG3up(x2_x2_x4)/training_charts/vgg3up_2.png",                
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGG3up(x2_x2_x4)/evaluation_charts/fcnVGG3up_2_face.png",
+                    "modelImg": "pending",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGG3up(x2_x2_x4)/histograms/histogram_Face.png"
+                    
+                }
+               
+            ]
+        },
+        {
+            "label": "Arch",
+            "modelsList":[
+                { 
+                    "title": "Original Arch",
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/arch-IR.jpg",
+                    "trainingResult": "N/A",
+                    "testResult": "N/A",
+                    "modelImg": "N/A",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/histograms/arch_original.png"
+                },
+                {
+                    "title": "FCN VGG-16 with 5 x2 upsample layers",
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/FCN(5_upsampling_layers)/fcnVGG5up_woback_img.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/FCN(5_upsampling_layers)/training_chart/vgg5up.png",                
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/FCN(5_upsampling_layers)/evaluation_charts/fcnVGG5up_img.png",
+                    "modelImg": "pending",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/FCN(5_upsampling_layers)/histograms/histogram_Arch.png"
+                    
+                },
+                {
+                    "title": "FCN VGG-16 with 3 (x4, x2, x2) upsample layers",
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGGup_3(x4%2Cx2%2Cx2)/total_data_0.6_leaky_relu_6conv_(fcnVGG3up)_woback_img.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGGup_3(x4%2Cx2%2Cx2)/trainig_charts/vgg3up.png",                
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGGup_3(x4%2Cx2%2Cx2)/evaluation_charts/fcnVGG3up_img.png",
+                    "modelImg": "pending",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGGup_3(x4%2Cx2%2Cx2)/histograms/histogram_Arch.png"
+                    
+                },
+                {
+                    "title": "FCN VGG-16 with 3 (x2, x2, x4) upsample layers",
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGG3up(x2_x2_x4)/(fcnVGG3up_2)_woback_img.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGG3up(x2_x2_x4)/training_charts/vgg3up_2.png",                
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGG3up(x2_x2_x4)/evaluation_charts/fcnVGG3up_2_img.png",
+                    "modelImg": "pending",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGG3up(x2_x2_x4)/histograms/histogram_Rch.png"
+                    
+                }
+              
+            ]
+        },
+        {
+            "label": "Robe",
+            "modelsList":[
+                { 
+                    "title": "Robe Original",
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/robeIR.jpg",
+                    "trainingResult": "N/A",
+                    "testResult": "N/A",
+                    "modelImg": "N/A",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/histograms/robe_original.png"
+                },
+                {
+                    "title": "FCN VGG-16 with 5 x2 upsample layers",
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/FCN(5_upsampling_layers)/fcnVGG5up_woback_robe.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/FCN(5_upsampling_layers)/training_chart/vgg5up.png",
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/FCN(5_upsampling_layers)/evaluation_charts/fcnVGG5up_robe.png",
+                    "modelImg": "pending",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/FCN(5_upsampling_layers)/histograms/histogram_Robe.png"
+                    
+                },
+                {
+                    "title": "FCN VGG-16 with 3 (x4, x2, x2) upsample layers",
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGGup_3(x4%2Cx2%2Cx2)/total_data_0.6_leaky_relu_6conv_(fcnVGG3up)_woback_robe.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGGup_3(x4%2Cx2%2Cx2)/trainig_charts/vgg3up.png",                
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGGup_3(x4%2Cx2%2Cx2)/evaluation_charts/fcnVGG3up_robe.png",
+                    "modelImg": "pending",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGGup_3(x4%2Cx2%2Cx2)/histograms/histogram_Robe.png"
+                    
+                },
+                {
+                    "title": "FCN VGG-16 with 3 (x2, x2, x4) upsample layers",
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGG3up(x2_x2_x4)/(fcnVGG3up_2)_woback_robe.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGG3up(x2_x2_x4)/training_charts/vgg3up_2.png",                
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGG3up(x2_x2_x4)/evaluation_charts/fcnVGG3up_2_robe.png",
+                    "modelImg": "pending",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGG3up(x2_x2_x4)/histograms/histogram_Robe.png"
+                    
+                }
+                
+            ]
+        },
+        {
+            "label": "Background",
+            "modelsList":[
+                { 
+                    "title": "Original Background",
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/IR_background.jpg",
+                    "trainingResult": "N/A",
+                    "testResult": "N/A",
+                    "modelImg": "N/A",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/histograms/IR_background.png"
+                },
+                {
+                    "title": "FCN VGG-16 with 5 x2 upsample layers",
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/FCN(5_upsampling_layers)/fcnVGG5up_woback_background.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/FCN(5_upsampling_layers)/training_chart/vgg5up.png",
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGGup_3(x4,x2,x2)/evaluation_charts/fcnVGG5up_background.png",
+                    "modelImg": "pending",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/FCN(5_upsampling_layers)/histograms/histogram_Background.png"
+                    
+                },
+                {
+                    "title": "FCN VGG-16 with 3 (x4, x2, x2) upsample layers",
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGGup_3(x4%2Cx2%2Cx2)/total_data_0.6_leaky_relu_6conv_(fcnVGG3up)_woback_background.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGGup_3(x4%2Cx2%2Cx2)/trainig_charts/vgg3up.png",                
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGGup_3(x4%2Cx2%2Cx2)/evaluation_charts/fcnVGG3up_background.png",
+                    "modelImg": "pending",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGGup_3(x4%2Cx2%2Cx2)/histograms/histogram_Background.png"
+                    
+                },
+                {
+                    "title": "FCN VGG-16 with 3 (x2, x2, x4) upsample layers",
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGG3up(x2_x2_x4)/(fcnVGG3up_2)_woback_background.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGG3up(x2_x2_x4)/training_charts/vgg3up_2.png",                
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGG3up(x2_x2_x4)/evaluation_charts/fcnVGG3up_2_background.png",
+                    "modelImg": "pending",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/fcnVGG3up(x2_x2_x4)/histograms/histogram_Background.png"
+                    
+                }
+               
+            ]
+        }
+    ]
+}

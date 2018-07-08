@@ -16,13 +16,13 @@
                 }
             </style>
     </head>
-<body ng-app="reportApp" ng-controller="reportController as report">
+<body ng-app="reportApp" >
     <% include ./partials/nav %>
     <!-- <h1 class="md-display-1" style="margin:8px">First Training Data Used (3264*2330)</h1>    -->
     <div ng-cloak>
         <md-content>
             <dataset></dataset>
-            <models-results model-name="vgg"></models-results>
+            <models-results model-name="noPooling"></models-results>
         </md-content>
     </div>
    
@@ -30,8 +30,6 @@
 
     <!-- <script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js'></script> -->
     <% include ./partials/scripts %>
-   
-    <script type='text/javascript' src="/public/app/controllers/reportController.js"></script>
     
 </body>
 </html>

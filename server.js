@@ -80,7 +80,12 @@ app.get('/modelsOverview', (req,res) => {
 app.get('/vggResults', (req,res) => {
     res.render('vggResults');
 })
-
+app.get('/noPooling', (req,res) => {
+    res.render('noPooling');
+})
+app.get('/somePooling', (req,res) => {
+    res.render('somePooling');
+})
 
 
 app.get('/pdf', (req,res) => {
