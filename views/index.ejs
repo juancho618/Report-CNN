@@ -12,8 +12,8 @@
             }
 
             .hover01:hover {
-                -webkit-transform: scale(1.5);
-                transform: scale(1.5);
+                -webkit-transform: scale(1.3);
+                transform: scale(1.3);
             }
 
             .wrapper {
@@ -60,6 +60,12 @@
                 border: 2px solid #ffffff;
                 background-color: transparent;
             }
+
+            .container {
+                padding: 0 55px;
+            }
+
+            .center_text--gray {}
         </style>
 </head>
 
@@ -80,43 +86,59 @@
                 <div layout="row" layout-align='center'>
                     <h1>Data: Ghent Altarpiece</h1>
                 </div>
-                <p>The
-                    <i>
-                        <b>Ghent Altarpiece</b>
-                    </i> (or the
-                    <i>
-                        <b>Adoration of the Mystic Lamb</b>
-                    </i>,
-                    <a href="https://en.wikipedia.org/wiki/Dutch_language" title="Dutch language">Dutch</a>:
-                    <i>
-                        <span lang="nl">
-                            <b>Het Lam Gods</b>
-                        </span>
-                    </i>) is a very large and complex 15th-century
-                    <a href="https://en.wikipedia.org/wiki/Polyptych" title="Polyptych">polyptych</a>
-                    <a href="https://en.wikipedia.org/wiki/Altarpiece" title="Altarpiece">altarpiece</a> in
-                    <a href="https://en.wikipedia.org/wiki/St_Bavo%27s_Cathedral,_Ghent" title="St Bavo's Cathedral, Ghent">St Bavo's Cathedral, Ghent</a>, Belgium. It is attributed to the brothers
-                    <a href="https://en.wikipedia.org/wiki/Hubert_van_Eyck" title="Hubert van Eyck">Hubert</a> and
-                    <a href="https://en.wikipedia.org/wiki/Jan_van_Eyck" title="Jan van Eyck">Jan van Eyck</a>, who were
-                    <a href="https://en.wikipedia.org/wiki/Early_Netherlandish_painting" title="Early Netherlandish painting">Early Flemish</a> painters. It is considered a masterpiece of European art and one of the world's treasures.</p>
-                <p>We received two high resolution images from one of the panels. One of them in infrared and the other in the
-                    visual spectrum.</p>
-                <p>Just the color panel has a size of 8GB and with a 24125px by 61386 resolution. This is indeed a big portion
-                    of data that could be use to train and test a model to transform the images from RGB images to infrared
-                    images.
-                </p>
-                <p>The patches of the panel used for the model are:</p>
+                <div class="center_text">
+                    <p>The
+                        <i>
+                            <b>Ghent Altarpiece</b>
+                        </i> (or the
+                        <i>
+                            <b>Adoration of the Mystic Lamb</b>
+                        </i>,
+                        <a href="https://en.wikipedia.org/wiki/Dutch_language" title="Dutch language">Dutch</a>:
+                        <i>
+                            <span lang="nl">
+                                <b>Het Lam Gods</b>
+                            </span>
+                        </i>) is a very large and complex 15th-century
+                        <a href="https://en.wikipedia.org/wiki/Polyptych" title="Polyptych">polyptych</a>
+                        <a href="https://en.wikipedia.org/wiki/Altarpiece" title="Altarpiece">altarpiece</a> in
+                        <a href="https://en.wikipedia.org/wiki/St_Bavo%27s_Cathedral,_Ghent" title="St Bavo's Cathedral, Ghent">St Bavo's Cathedral, Ghent</a>, Belgium. It is attributed to the brothers
+                        <a href="https://en.wikipedia.org/wiki/Hubert_van_Eyck" title="Hubert van Eyck">Hubert</a> and
+                        <a href="https://en.wikipedia.org/wiki/Jan_van_Eyck" title="Jan van Eyck">Jan van Eyck</a>, who were
+                        <a href="https://en.wikipedia.org/wiki/Early_Netherlandish_painting" title="Early Netherlandish painting">Early Flemish</a> painters. It is considered a masterpiece of European art and one of the world's
+                        treasures.
+                    </p>
+                    <p>We received two high resolution images from one of the panels. One of them in infrared and the other
+                        in the visual spectrum.</p>
+                    <p>Just the color panel has a size of 8GB and with a 24125px by 61386px resolution. This is indeed a big portion
+                        of data that could be use to train and test a model to transform the images from RGB images to infrared
+                        images.
+                    </p>
+                    <p>The patches of the panel used for the model are:</p>
+                </div>
+
                 <div layout="row" flex>
                     <div flex="25" layout="column" layout-padding ng-repeat="patch in data.trainSet">
-                        <h3>{{patch.name}}</h3>
-                        <img ng-mouseover="data.overIn(patch.name)" ng-mouseleave="data.overOut(patch.name)"  class="hover01" width="100px" ng-src="{{patch.urlVIS}}" ng-click="data.openImage(patch.urlVIS)" />
-                        <img class="hover01" width="100px" ng-src="{{patch.urlIR}}" ng-click="data.openImage(patch.urlIR)" />
-                        <h4>{{patch.width}}px X {{patch.height}}px</h4>
+                        <md-card>
+                            <md-card-title style="padding-top: 0px;">
+                                <h3>{{patch.name}}</h3>
+                            </md-card-title>
+                            <md-card-title-media layout-align='center center' layout='column'>
+                                <img ng-mouseover="data.overIn(patch.name)" ng-mouseleave="data.overOut(patch.name)" class="hover01" style="width: 170px;"
+                                    ng-src="{{patch.urlVIS}}" ng-click="data.openImage(patch.urlVIS)" />
+                                <br>
+                                <img class="hover01" ng-src="{{patch.urlIR}}" ng-click="data.openImage(patch.urlIR)" style="width: 170px;" />
+                                <h4>{{patch.width}}px X {{patch.height}}px</h4>
+                            </md-card-title-media>
+
+                        </md-card>
                     </div>
                 </div>
+                <md-button class="md-raised md-primary" data-ng-href="/modelsOverview">Go to the Models!</md-button>
             </div>
             <div class="wrapper">
-                <img height="600px" src="https://s3.eu-west-3.amazonaws.com/cnn-art/panelIR.jpg" alt="panel-image" ng-click="data.openImage('https://s3.eu-west-3.amazonaws.com/cnn-art/panelIR.jpg')"/>
+                <img height="600px" src="https://s3.eu-west-3.amazonaws.com/cnn-art/panelIR.jpg" alt="panel-image" ng-click="data.openImage('https://s3.eu-west-3.amazonaws.com/cnn-art/panelIR.jpg')"
+                />
                 <div ng-show="data.robeBox" class="robeBox"></div>
                 <div ng-show="data.faceBox" class="faceBox"></div>
                 <div ng-show="data.backgroundBox" class="backgroundBox"></div>

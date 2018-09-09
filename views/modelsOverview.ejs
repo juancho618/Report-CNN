@@ -34,16 +34,19 @@
         opacity: 0;
         padding: 0 10px;
       }
+      .container{
+        padding: 0 10px;
+      }
     </style>
 </head>
 
 <body ng-app="reportApp" ng-controller="modelOverviewController as vm">
   <% include ./partials/nav %>
     <!-- <h1 class="md-display-1" style="margin:8px">First Training Data Used (3264*2330)</h1>    -->
-    <div ng-cloak layout="column">
+    <div ng-cloak layout="column" class="container">
       <h1>Models Implemented</h1>
 
-      <div role="dialog" aria-label="Eat me!" layout="column" layout-align="center center" ng-repeat="model in vm.modelsList">
+      <div role="dialog" aria-label="model container" layout="column" layout-align="center center" ng-repeat="model in vm.modelsList">
         <md-toolbar>
           <div class="md-toolbar-tools">
             <h2>{{model.name}}</h2>
@@ -55,7 +58,7 @@
         </md-toolbar>
 
         <div id="{{model.id}}" ng-show="model.show" class="demo-dialog-content animate-show">
-          <p>
+          <p style="width: 60%; margin: 0 auto; text-align: justify">
             {{model.description}}
           </p>
 

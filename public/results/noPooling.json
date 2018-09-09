@@ -8,7 +8,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/faceIr.jpg",
                     "trainingResult": "N/A",
                     "testResult": "N/A",
-                    "modelImg": "N/A",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/histograms/face_original_histogram.png"
                     
                 },
@@ -17,7 +17,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/128,256,512,256,128,1/128,256,512,256,128,1_woback_face.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/128%2C256%2C512%2C256%2C128%2C1/training_charts/128%2C256%2C512%2C256%2C128%2C1.png",
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/128,256,512,256,128,1/evaluation_charts/128,256,512,256,128,1_face.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/128,256,512,256,128,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/128,256,512,256,128,1/histograms/histogram_Face.png"
                     
                 },
@@ -26,7 +26,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,16,64,64,64,64,64,64,1/16,16,16,64,64,64,64,64,64,1_woback_face.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16%2C16%2C16%2C64%2C64%2C64%2C64%2C64%2C64%2C1/training_charts/16%2C16%2C16%2C64%2C64%2C64%2C64%2C64%2C64%2C1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,16,64,64,64,64,64,64,1/evaluation_charts/16,16,16,64,64,64,64,64,64,1_face.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,16,64,64,64,64,64,64,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,16,64,64,64,64,64,64,1/histograms/histogram_Face.png"
                     
                 },
@@ -35,7 +35,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,32,32,64,64,64,64,1/16,16,32,32,32,64,64,64,64,1_woback_face.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,32,32,64,64,64,64,1/training_charts/16,16,32,32,32,64,64,64,64,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,32,32,64,64,64,64,1/evaluation_charts/16,16,32,32,32,64,64,64,64,1_face.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,32,32,64,64,64,64,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,16,64,64,64,64,64,64,1/histograms/histogram_Face.png"
                     
                 },
@@ -44,7 +44,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,64,128,64,64,32,16,1/16,16,32,64,128,64,64,32,16,1_woback_face.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,64,128,64,64,32,16,1/training_charts/16,16,32,64,128,64,64,32,16,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,64,128,64,64,32,16,1/evaluation_charts/16,16,32,64,128,64,64,32,16,1_face.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,64,128,64,64,32,16,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,64,128,64,64,32,16,1/histograms/histogram_Face.png"
                     
                 },
@@ -53,7 +53,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,128,128,128,128,128,1/16,32,64,128,128,128,128,128,128,1_woback_face.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,128,128,128,128,128,1/training_charts/16,32,64,128,128,128,128,128,128,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,128,128,128,128,128,1/evaluation_charts/16,32,64,128,128,128,128,128,128,1_face.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,128,128,128,128,128,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,128,128,128,128,128,1/histograms/histogram_Face.png"
                     
                 },
@@ -62,7 +62,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,256,128,64,32,16,1/16,32,64,128,256,128,64,32,16,1_woback_face.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,256,128,64,32,16,1/training_charts/16,32,64,128,256,128,64,32,16,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,256,128,64,32,16,1/evaluation_charts/16,32,64,128,256,128,64,32,16,1_face.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,256,128,64,32,16,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,256,128,64,32,16,1/histograms/histogram_Face.png"
                     
                 },
@@ -71,7 +71,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,64,64,64,64,32,16,1/16,32,64,64,64,64,64,32,16,1_woback_face.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,64,64,64,64,32,16,1/training_charts/16,32,64,64,64,64,64,32,16,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,64,64,64,64,32,16,1/evaluation_charts/16,32,64,64,64,64,64,32,16,1_face.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,64,64,64,64,32,16,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,64,64,64,64,32,16,1/histograms/histogram_Face.png"
                     
                 },
@@ -80,7 +80,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,32,32,64,64,64,64,1/16,16,32,32,32,64,64,64,64,1_woback_face.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,32,32,64,64,64,64,1/training_charts/16,16,32,32,32,64,64,64,64,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,32,32,64,64,64,64,1/evaluation_charts/16,16,32,32,32,64,64,64,64,1_face.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,32,32,64,64,64,64,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,32,32,64,64,64,64,1/histograms/histogram_Face.png"
                     
                 },
@@ -89,7 +89,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,64,256,64,16,1/16,64,256,64,16,1_woback_face.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,64,256,64,16,1/training_charts/16,64,256,64,16,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,64,256,64,16,1/evaluation_charts/16,64,256,64,16,1_face.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,64,256,64,16,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,64,256,64,16,1/histograms/histogram_Face.png"
                     
                 },
@@ -98,7 +98,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,128,64,32,1/32,64,128,64,32,1_woback_face.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,128,64,32,1/training_charts/32,64,128,64,32,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,128,64,32,1/evaluation_charts/32,64,128,64,32,1_face.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,128,64,32,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32%2C64%2C128%2C64%2C32%2C1/histograms/histogram_face.png"
                     
                 },
@@ -107,7 +107,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,64,32,16,32,64,64,32,1/32,64,64,32,16,32,64,64,32,1_woback_face.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,64,32,16,32,64,64,32,1/training_charts/32,64,64,32,16,32,64,64,32,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,64,32,16,32,64,64,32,1/evaluation_charts/32,64,64,32,16,32,64,64,32,1_face.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,64,32,16,32,64,64,32,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,64,32,16,32,64,64,32,1/histograms/histogram_Face.png"
                     
                 },
@@ -116,7 +116,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/4,16,32,64,32,1/4,16,32,64,32,1_woback_face.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/4,16,32,64,32,1/training_charts/4,16,32,64,32,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/4,16,32,64,32,1/evaluation_charts/4,16,32,64,32,1_face.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/4,16,32,64,32,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/4,16,32,64,32,1/histograms/histogram_Face.png"
                     
                 },
@@ -125,7 +125,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/64,64,32,32,16,32,32,64,64,1/64,64,32,32,16,32,32,64,64,1_woback_face.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/64,64,32,32,16,32,32,64,64,1/training_charts/64,64,32,32,16,32,32,64,64,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/64,64,32,32,16,32,32,64,64,1/evaluation_charts/64,64,32,32,16,32,32,64,64,1_face.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/64,64,32,32,16,32,32,64,64,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/64,64,32,32,16,32,32,64,64,1/histograms/histogram_Face.png"
                     
                 },
@@ -134,7 +134,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,16,16,32,32,32,64,32,1/8,16,16,16,32,32,32,64,32,1_woback_face.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,16,16,32,32,32,64,32,1/training_charts/8,16,16,16,32,32,32,64,32,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8%2C16%2C16%2C16%2C32%2C32%2C32%2C64%2C32%2C1/evaluation_charts/8%2C16%2C16%2C16%2C32%2C32%2C32%2C64%2C32%2C1_face.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8%2C16%2C16%2C16%2C32%2C32%2C32%2C64%2C32%2C1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,16,16,32,32,32,64,32,1/histograms/histogram_Face.png"
                     
                 },
@@ -143,7 +143,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,32,64,128,64,32,16,8,1/8,16,32,64,128,64,32,16,8,1_woback_face.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,32,64,128,64,32,16,8,1/training_charts/8,16,32,64,128,64,32,16,8,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,32,64,128,64,32,16,8,1/evaluation_charts/8,16,32,64,128,64,32,16,8,1_face.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,32,64,128,64,32,16,8,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,32,64,128,64,32,16,8,1/histograms/histogram_Face.png"
                     
                 },
@@ -152,7 +152,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,32,64,128,32,1/8,32,64,128,32,1_woback_face.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,32,64,128,32,1/training_charts/8,32,64,128,32,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,32,64,128,32,1/evaluation_charts/8,32,64,128,32,1_face.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,32,64,128,32,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,32,64,128,32,1/histograms/histogram_Face.png"
                     
                 },
@@ -161,7 +161,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,8,16,32,32,32,32,32,32,1/8,8,16,32,32,32,32,32,32,1_woback_face.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,8,16,32,32,32,32,32,32,1/training_charts/8,8,16,32,32,32,32,32,32,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,8,16,32,32,32,32,32,32,1/evaluation_charts/8,8,16,32,32,32,32,32,32,1_face.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,8,16,32,32,32,32,32,32,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,8,16,32,32,32,32,32,32,1/histograms/histogram_Face.png"
                     
                 }
@@ -178,7 +178,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/arch-IR.jpg",
                     "trainingResult": "N/A",
                     "testResult": "N/A",
-                    "modelImg": "N/A",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/histograms/arch_original.png"
                 },
                 {
@@ -186,7 +186,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/128,256,512,256,128,1/128,256,512,256,128,1_woback_img.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/128%2C256%2C512%2C256%2C128%2C1/training_charts/128%2C256%2C512%2C256%2C128%2C1.png",
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/128,256,512,256,128,1/evaluation_charts/128,256,512,256,128,1_img.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/128,256,512,256,128,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/128,256,512,256,128,1/histograms/histogram_Arch.png"
                     
                 },
@@ -195,7 +195,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,16,64,64,64,64,64,64,1/16,16,16,64,64,64,64,64,64,1_woback_img.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16%2C16%2C16%2C64%2C64%2C64%2C64%2C64%2C64%2C1/training_charts/16%2C16%2C16%2C64%2C64%2C64%2C64%2C64%2C64%2C1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,16,64,64,64,64,64,64,1/evaluation_charts/16,16,16,64,64,64,64,64,64,1_img.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,16,64,64,64,64,64,64,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,16,64,64,64,64,64,64,1/histograms/histogram_Arch.png"
                     
                 },
@@ -204,7 +204,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,16,64,64,64,64,64,64,1/16,16,16,64,64,64,64,64,64,1_woback_img.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,16,64,64,64,64,64,64,1/training_charts/16,16,16,64,64,64,64,64,64,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,16,64,64,64,64,64,64,1/evaluation_charts/16,16,16,64,64,64,64,64,64,1_img.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,16,64,64,64,64,64,64,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,16,64,64,64,64,64,64,1/histograms/histogram_Arch.png"
                     
                 },
@@ -213,7 +213,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,64,128,64,64,32,16,1/16,16,32,64,128,64,64,32,16,1_woback_img.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,64,128,64,64,32,16,1/training_charts/16,16,32,64,128,64,64,32,16,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,64,128,64,64,32,16,1/evaluation_charts/16,16,32,64,128,64,64,32,16,1_img.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,64,128,64,64,32,16,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,64,128,64,64,32,16,1/histograms/histogram_Arch.png"
                     
                 },
@@ -222,7 +222,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,128,128,128,128,128,1/16,32,64,128,128,128,128,128,128,1_woback_img.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,128,128,128,128,128,1/training_charts/16,32,64,128,128,128,128,128,128,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,128,128,128,128,128,1/evaluation_charts/16,32,64,128,128,128,128,128,128,1_img.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,128,128,128,128,128,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,128,128,128,128,128,1/histograms/histogram_Arch.png"
                     
                 },
@@ -231,7 +231,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,256,128,64,32,16,1/16,32,64,128,256,128,64,32,16,1_woback_img.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,256,128,64,32,16,1/training_charts/16,32,64,128,256,128,64,32,16,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,256,128,64,32,16,1/evaluation_charts/16,32,64,128,256,128,64,32,16,1_img.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,256,128,64,32,16,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,256,128,64,32,16,1/histograms/histogram_Arch.png"
                     
                 },
@@ -240,7 +240,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,64,64,64,64,32,16,1/16,32,64,64,64,64,64,32,16,1_woback_img.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,64,64,64,64,32,16,1/training_charts/16,32,64,64,64,64,64,32,16,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,64,64,64,64,32,16,1/evaluation_charts/16,32,64,64,64,64,64,32,16,1_img.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,64,64,64,64,32,16,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,64,64,64,64,32,16,1/histograms/histogram_Arch.png"
                     
                 },
@@ -249,7 +249,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,32,32,64,64,64,64,1/16,16,32,32,32,64,64,64,64,1_woback_img.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,32,32,64,64,64,64,1/training_charts/16,16,32,32,32,64,64,64,64,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,32,32,64,64,64,64,1/evaluation_charts/16,16,32,32,32,64,64,64,64,1_img.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,32,32,64,64,64,64,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,32,32,64,64,64,64,1/histograms/histogram_Arch.png"
                     
                 },
@@ -258,7 +258,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,64,256,64,16,1/16,64,256,64,16,1_woback_img.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,64,256,64,16,1/training_charts/16,64,256,64,16,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,64,256,64,16,1/evaluation_charts/16,64,256,64,16,1_img.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,64,256,64,16,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,64,256,64,16,1/histograms/histogram_Arch.png"
                     
                 },
@@ -267,7 +267,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,128,64,32,1/32,64,128,64,32,1_woback_img.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,128,64,32,1/training_charts/32,64,128,64,32,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,128,64,32,1/evaluation_charts/32,64,128,64,32,1_img.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,128,64,32,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,128,64,32,1/histograms/histogram_Arch.png"
                     
                 },
@@ -276,7 +276,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,64,32,16,32,64,64,32,1/32,64,64,32,16,32,64,64,32,1_woback_img.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,64,32,16,32,64,64,32,1/training_charts/32,64,64,32,16,32,64,64,32,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,64,32,16,32,64,64,32,1/evaluation_charts/32,64,64,32,16,32,64,64,32,1_img.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,64,32,16,32,64,64,32,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,64,32,16,32,64,64,32,1/histograms/histogram_Arch.png"
                     
                 },
@@ -285,7 +285,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/4,16,32,64,32,1/4,16,32,64,32,1_woback_img.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/4,16,32,64,32,1/training_charts/4,16,32,64,32,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/4,16,32,64,32,1/evaluation_charts/4,16,32,64,32,1_img.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/4,16,32,64,32,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/4,16,32,64,32,1/histograms/histogram_Arch.png"
                     
                 },
@@ -294,7 +294,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/64,64,32,32,16,32,32,64,64,1/64,64,32,32,16,32,32,64,64,1_woback_img.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/64,64,32,32,16,32,32,64,64,1/training_charts/64,64,32,32,16,32,32,64,64,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/64,64,32,32,16,32,32,64,64,1/evaluation_charts/64,64,32,32,16,32,32,64,64,1_img.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/64,64,32,32,16,32,32,64,64,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/64,64,32,32,16,32,32,64,64,1/histograms/histogram_Arch.png"
                     
                 },
@@ -303,7 +303,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,16,16,32,32,32,64,32,1/8,16,16,16,32,32,32,64,32,1_woback_img.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,16,16,32,32,32,64,32,1/training_charts/8,16,16,16,32,32,32,64,32,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,16,16,32,32,32,64,32,1/evaluation_charts/8,16,16,16,32,32,32,64,32,1   _img.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,16,16,32,32,32,64,32,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,16,16,32,32,32,64,32,1/histograms/histogram_Arch.png"
                     
                 },
@@ -312,7 +312,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,32,64,128,64,32,16,8,1/8,16,32,64,128,64,32,16,8,1_woback_img.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,32,64,128,64,32,16,8,1/training_charts/8,16,32,64,128,64,32,16,8,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,32,64,128,64,32,16,8,1/evaluation_charts/8,16,32,64,128,64,32,16,8,1_img.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,32,64,128,64,32,16,8,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,32,64,128,64,32,16,8,1/histograms/histogram_Arch.png"
                     
                 },
@@ -321,7 +321,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,32,64,128,32,1/8,32,64,128,32,1_woback_img.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,32,64,128,32,1/training_charts/8,32,64,128,32,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,32,64,128,32,1/evaluation_charts/8,32,64,128,32,1_img.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,32,64,128,32,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,32,64,128,32,1/histograms/histogram_Arch.png"
                     
                 },
@@ -330,7 +330,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,8,16,32,32,32,32,32,32,1/8,8,16,32,32,32,32,32,32,1_woback_img.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,8,16,32,32,32,32,32,32,1/training_charts/8,8,16,32,32,32,32,32,32,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,8,16,32,32,32,32,32,32,1/evaluation_charts/8,8,16,32,32,32,32,32,32,1_img.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,8,16,32,32,32,32,32,32,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,8,16,32,32,32,32,32,32,1/histograms/histogram_Arch.png"
                     
                 }
@@ -346,7 +346,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/robeIR.jpg",
                     "trainingResult": "N/A",
                     "testResult": "N/A",
-                    "modelImg": "N/A",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/histograms/robe_original.png"
                 },
                 {
@@ -354,7 +354,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/128,256,512,256,128,1/128,256,512,256,128,1_woback_robe.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/128%2C256%2C512%2C256%2C128%2C1/training_charts/128%2C256%2C512%2C256%2C128%2C1.png",
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/128,256,512,256,128,1/evaluation_charts/128,256,512,256,128,1_robe.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/128,256,512,256,128,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/128,256,512,256,128,1/histograms/histogram_Robe.png"
                     
                 },
@@ -363,7 +363,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,16,64,64,64,64,64,64,1/16,16,16,64,64,64,64,64,64,1_woback_robe.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16%2C16%2C16%2C64%2C64%2C64%2C64%2C64%2C64%2C1/training_charts/16%2C16%2C16%2C64%2C64%2C64%2C64%2C64%2C64%2C1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,16,64,64,64,64,64,64,1/evaluation_charts/16,16,16,64,64,64,64,64,64,1_robe.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,16,64,64,64,64,64,64,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,16,64,64,64,64,64,64,1/histograms/histogram_Robe.png"
                     
                 },
@@ -372,7 +372,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16%2C16%2C32%2C32%2C32%2C64%2C64%2C64%2C64%2C1/16%2C16%2C32%2C32%2C32%2C64%2C64%2C64%2C64%2C1_woback_robe.png",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16%2C16%2C32%2C32%2C32%2C64%2C64%2C64%2C64%2C1/training_charts/16%2C16%2C32%2C32%2C32%2C64%2C64%2C64%2C64%2C1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16%2C16%2C32%2C32%2C32%2C64%2C64%2C64%2C64%2C1/evaluation_charts/16%2C32%2C64%2C64%2C64%2C64%2C64%2C32%2C16%2C1_robe.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16%2C16%2C32%2C32%2C32%2C64%2C64%2C64%2C64%2C1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16%2C16%2C32%2C32%2C32%2C64%2C64%2C64%2C64%2C1/histograms/histogram_Robe.png"
                     
                 },
@@ -381,7 +381,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16%2C16%2C32%2C64%2C128%2C64%2C64%2C32%2C16%2C1/16%2C16%2C32%2C64%2C128%2C64%2C64%2C32%2C16%2C1_woback_robe.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,64,128,64,64,32,16,1/training_charts/16,16,32,64,128,64,64,32,16,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,64,128,64,64,32,16,1/evaluation_charts/16,16,32,64,128,64,64,32,16,1_robe.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,64,128,64,64,32,16,1/evaluation_charts/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,64,128,64,64,32,16,1/histograms/histogram_Robe.png"
                     
                 },
@@ -390,7 +390,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16%2C32%2C64%2C128%2C128%2C128%2C128%2C128%2C128%2C1/16%2C32%2C64%2C128%2C128%2C128%2C128%2C128%2C128%2C1_woback_robe.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,128,128,128,128,128,1/training_charts/16,32,64,128,128,128,128,128,128,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,128,128,128,128,128,1/evaluation_charts/16,32,64,128,128,128,128,128,128,1_robe.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,128,128,128,128,128,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,128,128,128,128,128,1/histograms/histogram_Robe.png"
                     
                 },
@@ -399,7 +399,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16%2C32%2C64%2C64%2C64%2C64%2C64%2C32%2C16%2C1/16%2C32%2C64%2C64%2C64%2C64%2C64%2C32%2C16%2C1_woback_robe.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,256,128,64,32,16,1/training_charts/16,32,64,128,256,128,64,32,16,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,256,128,64,32,16,1/evaluation_charts/16,32,64,128,256,128,64,32,16,1_robe.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,256,128,64,32,16,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,256,128,64,32,16,1/histograms/histogram_Robe.png"
                     
                 },
@@ -408,17 +408,17 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,64,64,64,64,32,16,1/16,32,64,64,64,64,64,32,16,1_woback_robe.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,64,64,64,64,32,16,1/training_charts/16,32,64,64,64,64,64,32,16,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,64,64,64,64,32,16,1/evaluation_charts/16,32,64,64,64,64,64,32,16,1_robe.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,64,64,64,64,32,16,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,64,64,64,64,32,16,1/histograms/histogram_Robe.png"
                     
                 },
                 {
                     "title": "No pooling layers 16,64,128,64,16,1]",
-                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,64,128,64,16,1/16,64,128,64,16,1  _woback_robe.jpg",                        
-                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,64,128,64,16,1   /training_charts/16,64,128,64,16,1 .png",                
-                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,64,128,64,16,1   /evaluation_charts/16,64,128,64,16,1   _robe.png",
-                    "modelImg": "pending",
-                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,64,128,64,16,1    /histograms/histogram_Robe.png"
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,64,128,64,16,1/16,64,128,64,16,1_woback_robe.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,64,128,64,16,1/training_charts/16,64,128,64,16,1.png",                
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,64,128,64,16,1/evaluation_charts/16,64,128,64,16,1_robe.png",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,64,128,64,16,1/model.jpg",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,64,128,64,16,1/histograms/histogram_Robe.png"
                     
                 },
                 {
@@ -426,7 +426,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,64,256,64,16,1/16,64,256,64,16,1_woback_robe.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,64,256,64,16,1/training_charts/16,64,256,64,16,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,64,256,64,16,1/evaluation_charts/16,64,256,64,16,1_robe.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,64,256,64,16,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,64,256,64,16,1/histograms/histogram_Robe.png"
                     
                 },
@@ -435,7 +435,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,128,64,32,1/32,64,128,64,32,1_woback_robe.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,128,64,32,1/training_charts/32,64,128,64,32,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,128,64,32,1/evaluation_charts/32,64,128,64,32,1_robe.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,128,64,32,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32%2C64%2C128%2C64%2C32%2C1/histograms/histogram_robe.png"
                     
                 },
@@ -444,7 +444,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,64,32,16,32,64,64,32,1/32,64,64,32,16,32,64,64,32,1_woback_robe.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,64,32,16,32,64,64,32,1/training_charts/32,64,64,32,16,32,64,64,32,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,64,32,16,32,64,64,32,1/evaluation_charts/32,64,64,32,16,32,64,64,32,1_robe.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,64,32,16,32,64,64,32,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,64,32,16,32,64,64,32,1/histograms/histogram_Robe.png"
                     
                 },
@@ -453,7 +453,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/4,16,32,64,32,1/4,16,32,64,32,1_woback_robe.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/4,16,32,64,32,1/training_charts/4,16,32,64,32,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/4,16,32,64,32,1/evaluation_charts/4,16,32,64,32,1_robe.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/4,16,32,64,32,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/4,16,32,64,32,1/histograms/histogram_Robe.png"
                     
                 },
@@ -462,7 +462,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/64,64,32,32,16,32,32,64,64,1/64,64,32,32,16,32,32,64,64,1_woback_robe.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/64,64,32,32,16,32,32,64,64,1/training_charts/64,64,32,32,16,32,32,64,64,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/64,64,32,32,16,32,32,64,64,1/evaluation_charts/64,64,32,32,16,32,32,64,64,1_robe.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/64,64,32,32,16,32,32,64,64,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/64,64,32,32,16,32,32,64,64,1/histograms/histogram_Robe.png"
                     
                 },
@@ -471,7 +471,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,16,16,32,32,32,64,32,1/8,16,16,16,32,32,32,64,32,1_woback_robe.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,16,16,32,32,32,64,32,1/training_charts/8,16,16,16,32,32,32,64,32,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,16,16,32,32,32,64,32,1/evaluation_charts/8,16,16,16,32,32,32,64,32,1_robe.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,16,16,32,32,32,64,32,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,16,16,32,32,32,64,32,1/histograms/histogram_Robe.png"
                     
                 },
@@ -480,7 +480,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,32,64,128,64,32,16,8,1/8,16,32,64,128,64,32,16,8,1_woback_robe.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,32,64,128,64,32,16,8,1/training_charts/8,16,32,64,128,64,32,16,8,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,32,64,128,64,32,16,8,1/evaluation_charts/8,16,32,64,128,64,32,16,8,1_robe.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,32,64,128,64,32,16,8,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,32,64,128,64,32,16,8,1/histograms/histogram_Robe.png"
                     
                 },
@@ -489,7 +489,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,32,64,128,32,1/8,32,64,128,32,1_woback_robe.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,32,64,128,32,1/training_charts/8,32,64,128,32,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,32,64,128,32,1/evaluation_charts/8,32,64,128,32,1_robe.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,32,64,128,32,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,32,64,128,32,1/histograms/histogram_Robe.png"
                     
                 },
@@ -498,7 +498,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,8,16,32,32,32,32,32,32,1/8,8,16,32,32,32,32,32,32,1_woback_robe.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,8,16,32,32,32,32,32,32,1/training_charts/8,8,16,32,32,32,32,32,32,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,8,16,32,32,32,32,32,32,1/evaluation_charts/8,8,16,32,32,32,32,32,32,1_robe.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,8,16,32,32,32,32,32,32,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,8,16,32,32,32,32,32,32,1/histograms/histogram_Robe.png"
                     
                 }
@@ -513,7 +513,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/IR_background.jpg",
                     "trainingResult": "N/A",
                     "testResult": "N/A",
-                    "modelImg": "N/A",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/histograms/IR_background.png"
                 },
                 {
@@ -521,7 +521,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/128,256,512,256,128,1/128,256,512,256,128,1_woback_background.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/128%2C256%2C512%2C256%2C128%2C1/training_charts/128%2C256%2C512%2C256%2C128%2C1.png",
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/128,256,512,256,128,1/evaluation_charts/128,256,512,256,128,1_background.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/128,256,512,256,128,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/128,256,512,256,128,1/histograms/histogram_Background.png"
                     
                 },
@@ -530,7 +530,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,16,64,64,64,64,64,64,1/16,16,16,64,64,64,64,64,64,1_woback_background.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16%2C16%2C16%2C64%2C64%2C64%2C64%2C64%2C64%2C1/training_charts/16%2C16%2C16%2C64%2C64%2C64%2C64%2C64%2C64%2C1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,16,64,64,64,64,64,64,1/evaluation_charts/16,16,16,64,64,64,64,64,64,1_background.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,16,64,64,64,64,64,64,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,16,64,64,64,64,64,64,1/histograms/histogram_Background.png"
                     
                 },
@@ -539,7 +539,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,32,32,64,64,64,64,1/16,16,32,32,32,64,64,64,64,1_woback_background.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,32,32,64,64,64,64,1/training_charts/16,16,32,32,32,64,64,64,64,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16%2C16%2C32%2C32%2C32%2C64%2C64%2C64%2C64%2C1/evaluation_charts/16%2C32%2C64%2C64%2C64%2C64%2C64%2C32%2C16%2C1_background.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16%2C16%2C32%2C32%2C32%2C64%2C64%2C64%2C64%2C1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,32,32,64,64,64,64,1/histograms/histogram_Background.png"
                     
                 },
@@ -548,7 +548,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,64,128,64,64,32,16,1/16,16,32,64,128,64,64,32,16,1_woback_background.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,64,128,64,64,32,16,1/training_charts/16,16,32,64,128,64,64,32,16,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,64,128,64,64,32,16,1/evaluation_charts/16,16,32,64,128,64,64,32,16,1_background.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,64,128,64,64,32,16,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,16,32,64,128,64,64,32,16,1/histograms/histogram_Background.png"
                     
                 },
@@ -557,7 +557,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,128,128,128,128,128,1/16,32,64,128,128,128,128,128,128,1_woback_background.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,128,128,128,128,128,1/training_charts/16,32,64,128,128,128,128,128,128,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,128,128,128,128,128,1/evaluation_charts/16,32,64,128,128,128,128,128,128,1_background.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,128,128,128,128,128,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,128,128,128,128,128,1/histograms/histogram_Background.png"
                     
                 },
@@ -566,7 +566,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,256,128,64,32,16,1/16,32,64,128,256,128,64,32,16,1_woback_background.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,256,128,64,32,16,1/training_charts/16,32,64,128,256,128,64,32,16,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,256,128,64,32,16,1/evaluation_charts/16,32,64,128,256,128,64,32,16,1_background.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,128,128,128,128,128,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,128,256,128,64,32,16,1/histograms/histogram_Background.png"
                     
                 },
@@ -575,7 +575,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,64,64,64,64,32,16,1/16,32,64,64,64,64,64,32,16,1_woback_background.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,64,64,64,64,32,16,1/training_charts/16,32,64,64,64,64,64,32,16,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,64,64,64,64,32,16,1/evaluation_charts/16,32,64,64,64,64,64,32,16,1_background.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,64,64,64,64,32,16,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,32,64,64,64,64,64,32,16,1/histograms/histogram_Background.png"
                     
                 },
@@ -584,7 +584,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,64,128,64,16,1/16,64,128,64,16,1_woback_background.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,64,128,64,16,1/training_charts/16,64,128,64,16,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,64,128,64,16,1/evaluation_charts/16,64,128,64,16,1_background.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,64,128,64,16,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/16,64,128,64,16,1/histograms/histogram_Background.png"
                     
                 },
@@ -611,7 +611,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,64,32,16,32,64,64,32,1/32,64,64,32,16,32,64,64,32,1_woback_background.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,64,32,16,32,64,64,32,1/training_charts/32,64,64,32,16,32,64,64,32,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,64,32,16,32,64,64,32,1/evaluation_charts/32,64,64,32,16,32,64,64,32,1_background.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,64,32,16,32,64,64,32,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/32,64,64,32,16,32,64,64,32,1/histograms/histogram_Background.png"
                     
                 },
@@ -620,7 +620,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/4,16,32,64,32,1/4,16,32,64,32,1_woback_background.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/4,16,32,64,32,1/training_charts/4,16,32,64,32,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/4,16,32,64,32,1/evaluation_charts/4,16,32,64,32,1_background.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/4,16,32,64,32,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/4,16,32,64,32,1/histograms/histogram_Background.png"
                     
                 },
@@ -629,7 +629,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/64,64,32,32,16,32,32,64,64,1/64,64,32,32,16,32,32,64,64,1_woback_background.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/64,64,32,32,16,32,32,64,64,1/training_charts/64,64,32,32,16,32,32,64,64,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/64,64,32,32,16,32,32,64,64,1/evaluation_charts/64,64,32,32,16,32,32,64,64,1_background.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/64,64,32,32,16,32,32,64,64,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/64,64,32,32,16,32,32,64,64,1/histograms/histogram_Background.png"
                     
                 },
@@ -638,7 +638,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,16,16,32,32,32,64,32,1/8,16,16,16,32,32,32,64,32,1_woback_background.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,16,16,32,32,32,64,32,1/training_charts/8,16,16,16,32,32,32,64,32,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,16,16,32,32,32,64,32,1/evaluation_charts/8,16,16,16,32,32,32,64,32,1_background.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/64,64,32,32,16,32,32,64,64,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8%2C16%2C16%2C16%2C32%2C32%2C32%2C64%2C32%2C1/evaluation_charts/8%2C16%2C16%2C16%2C32%2C32%2C32%2C64%2C32%2C1_background.png"
                     
                 },
@@ -647,7 +647,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,32,64,128,64,32,16,8,1/8,16,32,64,128,64,32,16,8,1_woback_background.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,32,64,128,64,32,16,8,1/training_charts/8,16,32,64,128,64,32,16,8,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,32,64,128,64,32,16,8,1/evaluation_charts/8,16,32,64,128,64,32,16,8,1_background.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,32,64,128,64,32,16,8,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,16,32,64,128,64,32,16,8,1/histograms/histogram_Background.png"
                     
                 },
@@ -656,7 +656,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,32,64,128,32,1/8,32,64,128,32,1_woback_background.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,32,64,128,32,1/training_charts/8,32,64,128,32,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,32,64,128,32,1/evaluation_charts/8,32,64,128,32,1_background.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,32,64,128,32,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,32,64,128,32,1/histograms/histogram_Background.png"
                     
                 },
@@ -665,7 +665,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,8,16,32,32,32,32,32,32,1/8,8,16,32,32,32,32,32,32,1_woback_background.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,8,16,32,32,32,32,32,32,1/training_charts/8,8,16,32,32,32,32,32,32,1.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,8,16,32,32,32,32,32,32,1/evaluation_charts/8,8,16,32,32,32,32,32,32,1_background.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,8,16,32,32,32,32,32,32,1/model.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/noPooling/8,8,16,32,32,32,32,32,32,1/histograms/histogram_Background.png"
                     
                 }

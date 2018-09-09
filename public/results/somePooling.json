@@ -15,27 +15,27 @@
                 {
                     "title": "Some upsample layers [16,p,32,32,p,64x4,p,128x4_up]",
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32,32,p,64x4,p,128x4_up/16,p,32,32,p,64x4,p,128x4_up_woback_face.jpg",                        
-                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32,32,p,64x4,p,128x4_up/training_chart/16,p,32,32,p,64x4,p,128x4_up.png",
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16%2Cp%2C32%2C32%2Cp%2C64x4%2Cp%2C128x4_up/training_charts/16x2%2Cp%2C32x3%2Cp%2C64x4%2Cp%2C128x4%2Cp%2C4x2up.png",
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32,32,p,64x4,p,128x4_up/evaluation_charts/16,p,32,32,p,64x4,p,128x4_up_face.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32,32,p,64x4,p,128x4_up/16,p,32,32,p,64x4,p,128x4_up.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32,32,p,64x4,p,128x4_up/histograms/histogram_Face.png"
                     
                 },
                 {
                     "title": "Some upsample layers [16,p,32x2,p,64x4,p,3x2up]",
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,3x2up/16,p,32x2,p,64x4,p,3x2up_woback_face.jpg",                        
-                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,3x2up/trainig_charts/16,p,32x2,p,64x4,p,3x2up.png",                
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16%2Cp%2C32x2%2Cp%2C64x4%2Cp%2C3x2up/training_charts/16%2Cp%2C32x2%2Cp%2C64x4%2Cp%2C3x2up.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,3x2up/evaluation_charts/16,p,32x2,p,64x4,p,3x2up_face.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,3x2up/16,p,32x2,p,64x4,p,3x2up.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,3x2up/histograms/histogram_Face.png"
                     
                 },
                 {
                     "title": "Some upsample layers [16,p,32x2,p,64x4,p,4x2up]", 
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,4x2up/16,p,32x2,p,64x4,p,4x2up_woback_face.jpg",                        
-                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,4x2up/training_charts/16,p,32x2,p,64x4,p,4x2up.png",                
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16%2Cp%2C32x2%2Cp%2C64x4%2Cp%2C4x2up/training_charts/16%2Cp%2C32x2%2Cp%2C64x4%2Cp%2C3x2up.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,4x2up/evaluation_charts/16,p,32x2,p,64x4,p,4x2up_face.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,4x2up/16,p,32x2,p,64x4,p,4x2up.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,4x2up/histograms/histogram_Face.png"
                     
                 },
@@ -44,7 +44,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up/16x2,p,32x3,p,64x4,2x2up_woback_face.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up/training_charts/16x2,p,32x3,p,64x4,2x2up.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up/evaluation_charts/16x2,p,32x3,p,64x4,2x2up_face.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up/16x2,p,32x3,p,64x4,2x2up.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up/histograms/histogram_Face.png"
                     
                 },
@@ -53,16 +53,16 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up_fuse/16x2,p,32x3,p,64x4,2x2up_fuse_woback_face.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up_fuse/training_charts/16x2,p,32x3,p,64x4,2x2up_fuse.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up_fuse/evaluation_charts/16x2,p,32x3,p,64x4,2x2up_fuse_face.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up_fuse/16x2,p,32x3,p,64x4,2x2up_fuse.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up_fuse/histograms/histogram_Face.png"
                     
                 },
                 {
                     "title": "Some upsample layers [16x2,p,32x3,p,64x4,p,128x4,p,4x2up]", 
-                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/16x2,p,32x3,p,64x4,p,128x4,p,4x2up_woback_face.jpg",                        
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2%2Cp%2C32x3%2Cp%2C64x4%2Cp%2C128x4%2Cp%2C4x2up/16x2%2Cp%2C32x3%2Cp%2C64x4%2C2x2up_woback_face.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/training_charts/16x2,p,32x3,p,64x4,p,128x4,p,4x2up.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/evaluation_charts/16x2,p,32x3,p,64x4,p,128x4,p,4x2up_face.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/16x2,p,32x3,p,64x4,p,128x4,p,4x2up.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/histograms/histogram_Face.png"
                     
                 },
@@ -71,7 +71,7 @@
                     "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4_up/16x2,p,32x3,p,64x4_up_woback_face.jpg",                        
                     "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4_up/training_charts/16x2,p,32x3,p,64x4_up.png",                
                     "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4_up/evaluation_charts/16x2,p,32x3,p,64x4_up_face.png",
-                    "modelImg": "pending",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4_up/16x2,p,32x3,p,64x4_up.jpg",
                     "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4_up/histograms/histogram_Face.png"
                     
                 }               
@@ -90,65 +90,65 @@
                 },
                 {
                     "title": "Some upsample layers [16,p,32,32,p,64x4,p,128x4_up]",
-                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32,32,p,64x4,p,128x4_up/16,p,32,32,p,64x4,p,128x4_up_woback_img.jpg",                        
-                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32,32,p,64x4,p,128x4_up/training_chart/16,p,32,32,p,64x4,p,128x4_up.png",
-                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32,32,p,64x4,p,128x4_up/evaluation_charts/16,p,32,32,p,64x4,p,128x4_up_img.png",
-                    "modelImg": "pending",
-                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32,32,p,64x4,p,128x4_up/histograms/histogram_Arch.png"
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32,32,p,64x4,p,128x4_up/16,p,32,32,p,64x4,p,128x4_up_woback_img.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16%2Cp%2C32%2C32%2Cp%2C64x4%2Cp%2C128x4_up/training_charts/16x2%2Cp%2C32x3%2Cp%2C64x4%2Cp%2C128x4%2Cp%2C4x2up.png",
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32,32,p,64x4,p,128x4_up/evaluation_charts/16,p,32,32,p,64x4,p,128x4_up_img.png",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32,32,p,64x4,p,128x4_up/16,p,32,32,p,64x4,p,128x4_up.jpg",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32,32,p,64x4,p,128x4_up/histograms/histogram_Arch.png"
                     
                 },
                 {
                     "title": "Some upsample layers [16,p,32x2,p,64x4,p,3x2up]",
-                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32x2,p,64x4,p,3x2up/16,p,32x2,p,64x4,p,3x2up_woback_img.jpg",                        
-                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32x2,p,64x4,p,3x2up/trainig_charts/16,p,32x2,p,64x4,p,3x2up.png",                
-                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32x2,p,64x4,p,3x2up/evaluation_charts/16,p,32x2,p,64x4,p,3x2up_img.png",
-                    "modelImg": "pending",
-                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32x2,p,64x4,p,3x2up/histograms/histogram_Arch.png"
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,3x2up/16,p,32x2,p,64x4,p,3x2up_woback_img.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16%2Cp%2C32x2%2Cp%2C64x4%2Cp%2C3x2up/training_charts/16%2Cp%2C32x2%2Cp%2C64x4%2Cp%2C3x2up.png",                
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,3x2up/evaluation_charts/16,p,32x2,p,64x4,p,3x2up_img.png",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,3x2up/16,p,32x2,p,64x4,p,3x2up.jpg",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,3x2up/histograms/histogram_Arch.png"
                     
                 },
                 {
                     "title": "Some upsample layers [16,p,32x2,p,64x4,p,4x2up]", 
-                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32x2,p,64x4,p,4x2up/16,p,32x2,p,64x4,p,4x2up_woback_img.jpg",                        
-                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32x2,p,64x4,p,4x2up/training_charts/16,p,32x2,p,64x4,p,4x2up.png",                
-                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32x2,p,64x4,p,4x2up/evaluation_charts/16,p,32x2,p,64x4,p,4x2up_img.png",
-                    "modelImg": "pending",
-                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32x2,p,64x4,p,4x2up/histograms/histogram_Arch.png"
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,4x2up/16,p,32x2,p,64x4,p,4x2up_woback_img.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16%2Cp%2C32x2%2Cp%2C64x4%2Cp%2C4x2up/training_charts/16%2Cp%2C32x2%2Cp%2C64x4%2Cp%2C3x2up.png ",                
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,4x2up/evaluation_charts/16,p,32x2,p,64x4,p,4x2up_img.png",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,4x2up/16,p,32x2,p,64x4,p,4x2up.jpg",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,4x2up/histograms/histogram_Arch.png"
                     
                 },
                 {
                     "title": "Some upsample layers [16x2,p,32x3,p,64x4,2x2up]", 
-                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,2x2up/16x2,p,32x3,p,64x4,2x2up_woback_img.jpg",                        
-                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,2x2up/training_charts/16x2,p,32x3,p,64x4,2x2up.png",                
-                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,2x2up/evaluation_charts/16x2,p,32x3,p,64x4,2x2up_img.png",
-                    "modelImg": "pending",
-                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,2x2up/histograms/histogram_Arch.png"
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up/16x2,p,32x3,p,64x4,2x2up_woback_img.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up/training_charts/16x2,p,32x3,p,64x4,2x2up.png",                
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up/evaluation_charts/16x2,p,32x3,p,64x4,2x2up_img.png",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up/16x2,p,32x3,p,64x4,2x2up.jpg",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up/histograms/histogram_Arch.png"
                     
                 },
                 {
                     "title": "Some upsample layers [16x2,p,32x3,p,64x4,2x2up_fuse]", 
-                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,2x2up_fuse/16x2,p,32x3,p,64x4,2x2up_fuse_woback_img.jpg",                        
-                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,2x2up_fuse/training_charts/16x2,p,32x3,p,64x4,2x2up_fuse.png",                
-                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,2x2up_fuse/evaluation_charts/16x2,p,32x3,p,64x4,2x2up_fuse_img.png",
-                    "modelImg": "pending",
-                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,2x2up_fuse/histograms/histogram_Arch.png"
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up_fuse/16x2,p,32x3,p,64x4,2x2up_fuse_woback_img.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up_fuse/training_charts/16x2,p,32x3,p,64x4,2x2up_fuse.png",                
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up_fuse/evaluation_charts/16x2,p,32x3,p,64x4,2x2up_fuse_img.png",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up_fuse/16x2,p,32x3,p,64x4,2x2up_fuse.jpg",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up_fuse/histograms/histogram_Arch.png"
                     
                 },
                 {
                     "title": "Some upsample layers [16x2,p,32x3,p,64x4,p,128x4,p,4x2up]", 
-                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/16x2,p,32x3,p,64x4,p,128x4,p,4x2up_woback_img.jpg",                        
-                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/training_charts/16x2,p,32x3,p,64x4,p,128x4,p,4x2up.png",                
-                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/evaluation_charts/16x2,p,32x3,p,64x4,p,128x4,p,4x2up_img.png",
-                    "modelImg": "pending",
-                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/histograms/histogram_Arch.png"
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2%2Cp%2C32x3%2Cp%2C64x4%2Cp%2C128x4%2Cp%2C4x2up/16x2%2Cp%2C32x3%2Cp%2C64x4%2C2x2up_woback_img.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/training_charts/16x2,p,32x3,p,64x4,p,128x4,p,4x2up.png",                
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/evaluation_charts/16x2,p,32x3,p,64x4,p,128x4,p,4x2up_img.png",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/16x2,p,32x3,p,64x4,p,128x4,p,4x2up.jpg",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/histograms/histogram_Arch.png"
                     
                 },
                 {
                     "title": "Some upsample layers [16x2,p,32x3,p,64x4_up]", 
-                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4_up/16x2,p,32x3,p,64x4_up_woback_img.jpg",                        
-                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4_up/training_charts/16x2,p,32x3,p,64x4_up.png",                
-                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4_up/evaluation_charts/16x2,p,32x3,p,64x4_up_img.png",
-                    "modelImg": "pending",
-                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4_up/histograms/histogram_Arch.png"
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4_up/16x2,p,32x3,p,64x4_up_woback_img.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4_up/training_charts/16x2,p,32x3,p,64x4_up.png",                
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4_up/evaluation_charts/16x2,p,32x3,p,64x4_up_img.png",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4_up/16x2,p,32x3,p,64x4_up.jpg",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4_up/histograms/histogram_Arch.png"
                     
                 }     
               
@@ -167,65 +167,65 @@
                 },
                 {
                     "title": "Some upsample layers [16,p,32,32,p,64x4,p,128x4_up]",
-                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32,32,p,64x4,p,128x4_up/16,p,32,32,p,64x4,p,128x4_up_woback_robe.jpg",                        
-                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32,32,p,64x4,p,128x4_up/training_chart/16,p,32,32,p,64x4,p,128x4_up.png",
-                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32,32,p,64x4,p,128x4_up/evaluation_charts/16,p,32,32,p,64x4,p,128x4_up_robe.png",
-                    "modelImg": "pending",
-                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32,32,p,64x4,p,128x4_up/histograms/histogram_Robe.png"
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32,32,p,64x4,p,128x4_up/16,p,32,32,p,64x4,p,128x4_up_woback_robe.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16%2Cp%2C32%2C32%2Cp%2C64x4%2Cp%2C128x4_up/training_charts/16x2%2Cp%2C32x3%2Cp%2C64x4%2Cp%2C128x4%2Cp%2C4x2up.png",
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32,32,p,64x4,p,128x4_up/evaluation_charts/16,p,32,32,p,64x4,p,128x4_up_robe.png",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32,32,p,64x4,p,128x4_up/16,p,32,32,p,64x4,p,128x4_up.jpg",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32,32,p,64x4,p,128x4_up/histograms/histogram_Robe.png"
                     
                 },
                 {
                     "title": "Some upsample layers [16,p,32x2,p,64x4,p,3x2up]",
-                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32x2,p,64x4,p,3x2up/16,p,32x2,p,64x4,p,3x2up_woback_robe.jpg",                        
-                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32x2,p,64x4,p,3x2up/trainig_charts/16,p,32x2,p,64x4,p,3x2up.png",                
-                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32x2,p,64x4,p,3x2up/evaluation_charts/16,p,32x2,p,64x4,p,3x2up_robe.png",
-                    "modelImg": "pending",
-                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32x2,p,64x4,p,3x2up/histograms/histogram_Robe.png"
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,3x2up/16,p,32x2,p,64x4,p,3x2up_woback_robe.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16%2Cp%2C32x2%2Cp%2C64x4%2Cp%2C3x2up/training_charts/16%2Cp%2C32x2%2Cp%2C64x4%2Cp%2C3x2up.png",                
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,3x2up/evaluation_charts/16,p,32x2,p,64x4,p,3x2up_robe.png",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,3x2up/16,p,32x2,p,64x4,p,3x2up.jpg",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,3x2up/histograms/histogram_Robe.png"
                     
                 },
                 {
                     "title": "Some upsample layers [16,p,32x2,p,64x4,p,4x2up]", 
-                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32x2,p,64x4,p,4x2up/16,p,32x2,p,64x4,p,4x2up_woback_robe.jpg",                        
-                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32x2,p,64x4,p,4x2up/training_charts/16,p,32x2,p,64x4,p,4x2up.png",                
-                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32x2,p,64x4,p,4x2up/evaluation_charts/16,p,32x2,p,64x4,p,4x2up_robe.png",
-                    "modelImg": "pending",
-                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32x2,p,64x4,p,4x2up/histograms/histogram_Robe.png"
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,4x2up/16,p,32x2,p,64x4,p,4x2up_woback_robe.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16%2Cp%2C32x2%2Cp%2C64x4%2Cp%2C4x2up/training_charts/16%2Cp%2C32x2%2Cp%2C64x4%2Cp%2C3x2up.png",                
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,4x2up/evaluation_charts/16,p,32x2,p,64x4,p,4x2up_robe.png",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,4x2up/16,p,32x2,p,64x4,p,4x2up.jpg",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,4x2up/histograms/histogram_Robe.png"
                     
                 },
                 {
                     "title": "Some upsample layers [16x2,p,32x3,p,64x4,2x2up]", 
-                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,2x2up/16x2,p,32x3,p,64x4,2x2up_woback_robe.jpg",                        
-                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,2x2up/training_charts/16x2,p,32x3,p,64x4,2x2up.png",                
-                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,2x2up/evaluation_charts/16x2,p,32x3,p,64x4,2x2up_robe.png",
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up/16x2,p,32x3,p,64x4,2x2up_woback_robe.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up/training_charts/16x2,p,32x3,p,64x4,2x2up.png",                
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up/evaluation_charts/16x2,p,32x3,p,64x4,2x2up_robe.png",
                     "modelImg": "pending",
-                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,2x2up/histograms/histogram_Robe.png"
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up/histograms/histogram_Robe.png"
                     
                 },                  
                 {
                     "title": "Some upsample layers [16x2,p,32x3,p,64x4,2x2up_fuse]", 
-                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,2x2up_fuse/16x2,p,32x3,p,64x4,2x2up_fuse_woback_robe.jpg",                        
-                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,2x2up_fuse/training_charts/16x2,p,32x3,p,64x4,2x2up_fuse.png",                
-                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,2x2up_fuse/evaluation_charts/16x2,p,32x3,p,64x4,2x2up_fuse_robe.png",
-                    "modelImg": "pending",
-                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,2x2up_fuse/histograms/histogram_Robe.png"
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up_fuse/16x2,p,32x3,p,64x4,2x2up_fuse_woback_robe.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up_fuse/training_charts/16x2,p,32x3,p,64x4,2x2up_fuse.png",                
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up_fuse/evaluation_charts/16x2,p,32x3,p,64x4,2x2up_fuse_robe.png",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up_fuse/16x2,p,32x3,p,64x4,2x2up_fuse.jpg",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up_fuse/histograms/histogram_Robe.png"
                     
                 },
                 {
                     "title": "Some upsample layers [16x2,p,32x3,p,64x4,p,128x4,p,4x2up]", 
-                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/16x2,p,32x3,p,64x4,p,128x4,p,4x2up_woback_robe.jpg",                        
-                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/training_charts/16x2,p,32x3,p,64x4,p,128x4,p,4x2up.png",                
-                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/evaluation_charts/16x2,p,32x3,p,64x4,p,128x4,p,4x2up_robe.png",
-                    "modelImg": "pending",
-                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/histograms/histogram_Robe.png"
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2%2Cp%2C32x3%2Cp%2C64x4%2Cp%2C128x4%2Cp%2C4x2up/16x2%2Cp%2C32x3%2Cp%2C64x4%2C2x2up_woback_robe.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/training_charts/16x2,p,32x3,p,64x4,p,128x4,p,4x2up.png",                
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/evaluation_charts/16x2,p,32x3,p,64x4,p,128x4,p,4x2up_robe.png",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/16x2,p,32x3,p,64x4,p,128x4,p,4x2up.jpg",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/histograms/histogram_Robe.png"
                     
                 },
                 {
                     "title": "Some upsample layers [16x2,p,32x3,p,64x4_up]", 
-                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4_up/16x2,p,32x3,p,64x4_up_woback_robe.jpg",                        
-                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4_up/training_charts/16x2,p,32x3,p,64x4_up.png",                
-                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4_up/evaluation_charts/16x2,p,32x3,p,64x4_up_robe.png",
-                    "modelImg": "pending",
-                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4_up/histograms/histogram_Robe.png"
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4_up/16x2,p,32x3,p,64x4_up_woback_robe.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4_up/training_charts/16x2,p,32x3,p,64x4_up.png",                
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4_up/evaluation_charts/16x2,p,32x3,p,64x4_up_robe.png",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4_up/16x2,p,32x3,p,64x4_up.jpg",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4_up/histograms/histogram_Robe.png"
                     
                 }     
                 
@@ -244,65 +244,65 @@
                 },
                 {
                     "title": "Some upsample layers [16,p,32,32,p,64x4,p,128x4_up]",
-                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32,32,p,64x4,p,128x4_up/16,p,32,32,p,64x4,p,128x4_up_woback_background.jpg",                        
-                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32,32,p,64x4,p,128x4_up/training_chart/16,p,32,32,p,64x4,p,128x4_up.png",
-                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32,32,p,64x4,p,128x4_up/evaluation_charts/16,p,32,32,p,64x4,p,128x4_up_background.png",
-                    "modelImg": "pending",
-                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32,32,p,64x4,p,128x4_up/histograms/histogram_Background.png"
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32,32,p,64x4,p,128x4_up/16,p,32,32,p,64x4,p,128x4_up_woback_background.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16%2Cp%2C32%2C32%2Cp%2C64x4%2Cp%2C128x4_up/training_charts/16x2%2Cp%2C32x3%2Cp%2C64x4%2Cp%2C128x4%2Cp%2C4x2up.png",
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32,32,p,64x4,p,128x4_up/evaluation_charts/16,p,32,32,p,64x4,p,128x4_up_background.png",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32,32,p,64x4,p,128x4_up/16,p,32,32,p,64x4,p,128x4_up.jpg",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32,32,p,64x4,p,128x4_up/histograms/histogram_Background.png"
                     
                 },
                 {
                     "title": "Some upsample layers [16,p,32x2,p,64x4,p,3x2up]",
-                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32x2,p,64x4,p,3x2up/16,p,32x2,p,64x4,p,3x2up_woback_background.jpg",                        
-                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32x2,p,64x4,p,3x2up/trainig_charts/16,p,32x2,p,64x4,p,3x2up.png",                
-                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32x2,p,64x4,p,3x2up/evaluation_charts/16,p,32x2,p,64x4,p,3x2up_background.png",
-                    "modelImg": "pending",
-                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32x2,p,64x4,p,3x2up/histograms/histogram_Background.png"
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,3x2up/16,p,32x2,p,64x4,p,3x2up_woback_background.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16%2Cp%2C32x2%2Cp%2C64x4%2Cp%2C3x2up/training_charts/16%2Cp%2C32x2%2Cp%2C64x4%2Cp%2C3x2up.png",                
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,3x2up/evaluation_charts/16,p,32x2,p,64x4,p,3x2up_background.png",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,3x2up/16,p,32x2,p,64x4,p,3x2up.jpg",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,3x2up/histograms/histogram_Background.png"
                     
                 },
                 {
                     "title": "Some upsample layers [16,p,32x2,p,64x4,p,4x2up]", 
-                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32x2,p,64x4,p,4x2up/16,p,32x2,p,64x4,p,4x2up_woback_background.jpg",                        
-                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32x2,p,64x4,p,4x2up/training_charts/16,p,32x2,p,64x4,p,4x2up.png",                
-                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32x2,p,64x4,p,4x2up/evaluation_charts/16,p,32x2,p,64x4,p,4x2up_background.png",
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,4x2up/16,p,32x2,p,64x4,p,4x2up_woback_background.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16%2Cp%2C32x2%2Cp%2C64x4%2Cp%2C4x2up/training_charts/16%2Cp%2C32x2%2Cp%2C64x4%2Cp%2C3x2up.png",                
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,4x2up/evaluation_charts/16,p,32x2,p,64x4,p,4x2up_background.png",
                     "modelImg": "pending",
-                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16,p,32x2,p,64x4,p,4x2up/histograms/histogram_Background.png"
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,4x2up/histograms/histogram_Background.png"
                     
                 },
                 {
                     "title": "Some upsample layers [16x2,p,32x3,p,64x4,2x2up]", 
-                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,2x2up/16x2,p,32x3,p,64x4,2x2up_woback_background.jpg",                        
-                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,2x2up/training_charts/16x2,p,32x3,p,64x4,2x2up.png",                
-                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,2x2up/evaluation_charts/16x2,p,32x3,p,64x4,2x2up_background.png",
-                    "modelImg": "pending",
-                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,2x2up/histograms/histogram_Background.png"
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up/16x2,p,32x3,p,64x4,2x2up_woback_background.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up/training_charts/16x2,p,32x3,p,64x4,2x2up.png",                
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up/evaluation_charts/16x2,p,32x3,p,64x4,2x2up_background.png",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16,p,32x2,p,64x4,p,4x2up/16,p,32x2,p,64x4,p,4x2up.jpg",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up/histograms/histogram_Background.png"
                     
                 },
                 {
                     "title": "Some upsample layers [16x2,p,32x3,p,64x4,2x2up_fuse]", 
-                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,2x2up_fuse/16x2,p,32x3,p,64x4,2x2up_fuse_woback_background.jpg",                        
-                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,2x2up_fuse/training_charts/16x2,p,32x3,p,64x4,2x2up_fuse.png",                
-                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,2x2up_fuse/evaluation_charts/16x2,p,32x3,p,64x4,2x2up_fuse_background.png",
-                    "modelImg": "pending",
-                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,2x2up_fuse/histograms/histogram_Background.png"
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up_fuse/16x2,p,32x3,p,64x4,2x2up_fuse_woback_background.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up_fuse/training_charts/16x2,p,32x3,p,64x4,2x2up_fuse.png",                
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up_fuse/evaluation_charts/16x2,p,32x3,p,64x4,2x2up_fuse_background.png",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up_fuse/16x2,p,32x3,p,64x4,2x2up_fuse.jpg",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,2x2up_fuse/histograms/histogram_Background.png"
                     
                 },
                 {
                     "title": "Some upsample layers [16x2,p,32x3,p,64x4,p,128x4,p,4x2up]", 
-                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/16x2,p,32x3,p,64x4,p,128x4,p,4x2up_woback_background.jpg",                        
-                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/training_charts/16x2,p,32x3,p,64x4,p,128x4,p,4x2up.png",                
-                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/evaluation_charts/16x2,p,32x3,p,64x4,p,128x4,p,4x2up_background.png",
-                    "modelImg": "pending",
-                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/histograms/histogram_Background.png"
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/16x2,p,32x3,p,64x4,p,128x4,p,4x2up_woback_background.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/training_charts/16x2,p,32x3,p,64x4,p,128x4,p,4x2up.png",                
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/evaluation_charts/16x2,p,32x3,p,64x4,p,128x4,p,4x2up_background.png",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/16x2,p,32x3,p,64x4,p,128x4,p,4x2up.jpg",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4,p,128x4,p,4x2up/histograms/histogram_Background.png"
                     
                 },
                 {
                     "title": "Some upsample layers [16x2,p,32x3,p,64x4_up]", 
-                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4_up/16x2,p,32x3,p,64x4_up_woback_background.jpg",                        
-                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4_up/training_charts/16x2,p,32x3,p,64x4_up.png",                
-                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4_up/evaluation_charts/16x2,p,32x3,p,64x4_up_background.png",
-                    "modelImg": "pending",
-                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/vggResults/16x2,p,32x3,p,64x4_up/histograms/histogram_Background.png"
+                    "imageName": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4_up/16x2,p,32x3,p,64x4_up_woback_background.jpg",                        
+                    "trainingResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4_up/training_charts/16x2,p,32x3,p,64x4_up.png",                
+                    "testResult": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4_up/evaluation_charts/16x2,p,32x3,p,64x4_up_background.png",
+                    "modelImg": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4_up/16x2,p,32x3,p,64x4_up.jpg",
+                    "histogram": "https://s3.eu-west-3.amazonaws.com/cnn-art/somePooling/16x2,p,32x3,p,64x4_up/histograms/histogram_Background.png"
                     
                 }     
                

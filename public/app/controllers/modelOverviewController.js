@@ -10,7 +10,7 @@ app.controller('modelOverviewController', function($http,  $mdDialog, $scope, $w
             id: 'vggModel',
             description: `One of the architecture winner in the ImageNet Competition (ILSVRC-2014), developed at Oxford by the Visual Geometry group. Highly accurate and widely used for classification and detection
                          our approach implements a fully connected VGG-16 model with different upsampling layers to recover the original image.`,
-            show: false,
+            show: true,
             img: 'https://s3.eu-west-3.amazonaws.com/cnn-art/vgg.jpg',
             results: 'vggResults'
         },
