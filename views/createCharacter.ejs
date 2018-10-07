@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <% include ./partials/head %>
+</head>
+
+<body ng-app="reportApp" ng-controller="characterController as view">
+
+    <div layout="row" ng-init="view.getAllCharacters()" ng-cloak >
+        <div layout="column"  flex="50">
+            <md-input-container>
+                <label>Name</label>
+                <input type="text" name="name" ng-model="view.character.name" required md-maxlength="15" minlength="4">
+                <!-- <div ng-messages="userForm.lastName.$error" ng-show="userForm.lastName.$dirty">
+                    <div ng-message="required">This is required!</div>
+                    <div ng-message="md-maxlength">That's too long!</div>
+                    <div ng-message="minlength">That's too short!</div>
+                </div> -->
+            </md-input-container>
+            <md-input-container>
+                <label>Race</label>
+                <md-select ng-model="view.character.race">
+                    <md-option>
+                        <em>None</em>
+                    </md-option>
+                    <md-option ng-repeat="race in view.races" ng-value="race.name">
+                        {{race.name}}
+                    </md-option>
+                </md-select>
+            </md-input-container>
+            <md-input-container>
+                <label>Class</label>
+                <md-select ng-model="view.character.class">
+                    <md-option>
+                        <em>None</em>
+                    </md-option>
+                    <md-option ng-repeat="class in view.classes" ng-value="class.name">
+                        {{class.name}}
+                    </md-option>
+                </md-select>
+            </md-input-container>
+    
+            <md-input-container>
+                <label>Strength</label>
+                <input type="number" name="name" ng-model="view.character.strength" required>
+                <!-- <div ng-messages="userForm.lastName.$error" ng-show="userForm.lastName.$dirty">
+                                <div ng-message="required">This is required!</div>
+                                <div ng-message="md-maxlength">That's too long!</div>
+                                <div ng-message="minlength">That's too short!</div>
+                            </div> -->
+            </md-input-container>
+    
+            <md-input-container>
+                <label>Dexterity</label>
+                <input type="number" name="name" ng-model="view.character.dexterity" required>
+                <!-- <div ng-messages="userForm.lastName.$error" ng-show="userForm.lastName.$dirty">
+                                    <div ng-message="required">This is required!</div>
+                                    <div ng-message="md-maxlength">That's too long!</div>
+                                    <div ng-message="minlength">That's too short!</div>
+                                </div> -->
+            </md-input-container>
+            <md-input-container>
+                <label>Constitution</label>
+                <input type="number" name="name" ng-model="view.character.constitution" required>
+                <!-- <div ng-messages="userForm.lastName.$error" ng-show="userForm.lastName.$dirty">
+                                        <div ng-message="required">This is required!</div>
+                                        <div ng-message="md-maxlength">That's too long!</div>
+                                        <div ng-message="minlength">That's too short!</div>
+                                    </div> -->
+            </md-input-container>
+            <md-input-container>
+                <label>Intelligence</label>
+                <input type="number" name="name" ng-model="view.character.intelligence" required>
+                <!-- <div ng-messages="userForm.lastName.$error" ng-show="userForm.lastName.$dirty">
+                                            <div ng-message="required">This is required!</div>
+                                            <div ng-message="md-maxlength">That's too long!</div>
+                                            <div ng-message="minlength">That's too short!</div>
+                                        </div> -->
+            </md-input-container>
+            <md-input-container>
+                <label>Wisdom</label>
+                <input type="number" name="name" ng-model="view.character.wisdom" required>
+                <!-- <div ng-messages="userForm.lastName.$error" ng-show="userForm.lastName.$dirty">
+                                                <div ng-message="required">This is required!</div>
+                                                <div ng-message="md-maxlength">That's too long!</div>
+                                                <div ng-message="minlength">That's too short!</div>
+                                            </div> -->
+            </md-input-container>
+            <md-input-container>
+                <label>Charisma</label>
+                <input type="number" name="name" ng-model="view.character.charisma" required>
+                <!-- <div ng-messages="userForm.lastName.$error" ng-show="userForm.lastName.$dirty">
+                                                    <div ng-message="required">This is required!</div>
+                                                    <div ng-message="md-maxlength">That's too long!</div>
+                                                    <div ng-message="minlength">That's too short!</div>
+                                                </div> -->
+            </md-input-container>
+            <md-button class="md-raised md-primary" ng-click="view.sendCharacter()">
+                save
+            </md-button>
+    
+    
+    
+        </div>
+        <div layout"column" flex="50">
+            <md-card ng-repeat="character in view.characters">
+                <md-card-content ng-click="view.setCharacter(character)">
+                     {{character.name}}
+                </md-card-content>
+            </md-card>
+        </div>
+    </div>
+    
+    <% include ./partials/scripts %>
+
+
+        <script type='text/javascript' src="/public/app/controllers/characterController.js"></script>
+</body>
+
+</html>
